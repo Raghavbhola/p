@@ -26,5 +26,12 @@ sum_tuple=(5,26,32,44,58,43,78,90,11,23)   #tuple
 total=0
 for i in sum_tuple:                    #loop for tuple
     print(i,total,sep="->")
-    #total=total+i
-    #print(i,total,sep="->")
+    total=total+i
+    print(i,total,sep="->")
+
+li=[5,26,32,44,58,43,78,90,11,23]   #List
+for i in li:                        #loop for List
+    if i%2==0:
+        print(i,"is even")
+    else:
+        print(i,"is odd")        
