@@ -5,10 +5,10 @@ for i in range(len(s)):
     print(i,s[i],sep="->")
 
 s="This is thirsty crow,looking for a drop of water and it is very hot day"
-#s1=10
-#for i in s1:    
+s1=10
+for i in s1:    
     #print(i)
-for i in s:
+#for i in s1:
     print(i,end="")
 
 s1=str(1001)
@@ -35,3 +35,21 @@ for i in li:                        #loop for List
         print(i,"is even")
     else:
         print(i,"is odd")        
+#(1)
+for i in range(10,20):        #Range
+    print(i)
+
+for i in range(30,40):        #Range
+    print(i)  
+#(2)
+for i in range(0,2,-1):       #Range
+    print("Hello")
+    
+print("program ends here") 
+#(3)
+for i in range(10):  #single argument-stop,start-0,step-1
+      print(i)  
+for i in range(1,10,2):
+      print(i)    
+for i in range(11,21,15):
+      print(i)        
