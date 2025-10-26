@@ -53,3 +53,15 @@ for i in range(1,10,2):
       print(i)    
 for i in range(11,21,15):
       print(i)        
+
+#(1)
+numbers={10:"ten",20:"twenty",30:"thirty",40:"forty",50:"fifty"}   #Dictionary
+for i in numbers:
+    print(i,numbers[i],sep="->")
+#(2)    
+numbers={10:"ten",20:"twenty",30:"thirty",40:"forty",50:"fifty"}
+a=(numbers.keys())          #list of keys
+print(a)
+#(3)
+for i in numbers.items():    #list of key-value pairs
+    print(i)      
