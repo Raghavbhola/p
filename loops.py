@@ -1,4 +1,5 @@
-#L00PS:->(for,while,for else,nested loops,break,continue,pass)
+#L00PS:->Loops are used to repeat instructions. *TWO types of loops:-> FOR and WHILE. 
+#        (for,while,for else,nested loops,break,continue,pass)
 #(1)For loop->string,list,tuple,set,dictionary
 s=[15,26,32,44,58,43,78,90,11,23]
 for i in range(len(s)):
@@ -65,3 +66,16 @@ print(a)
 #(3)
 for i in numbers.items():    #list of key-value pairs
     print(i)      
+#(4)
+a=numbers.get(10)          #accessing value using keys
+for i in numbers:
+    print(i,numbers[i],sep="->")         
+#For-else loop:->
+num=input("enter a number to write table:")
+for i in range(1,11):
+    print(f"{num}*{i}={num*i}")
+    print(f"{num*i}")
+else:  
+    print("table is completed here ")    
+    print("Program ends here/End of for-else loop")
+        
