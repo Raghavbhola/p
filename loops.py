@@ -79,3 +79,31 @@ else:
     print("table is completed here ")    
     print("Program ends here/End of for-else loop")
         
+ #While Loop:->It is used to repeat a block of code as long as a condition is true permanently, the loop will run indefinitely.
+#While expression:Loop condition-by default it is ture
+#statement(s)-block of code.
+#code to be executed.
+#(1)
+count=0
+print(id(count))
+while count<5:
+    print("count is:",count)
+    count+=1
+    print("loop ended")
+#(2)
+while True:
+    print("hello")
+    count=1
+    while count<=8:
+     print("hello")
+    count=count+1
+
+    print(count)
+
+#print numbers from 1 to 5
+i=1
+while i <=5:
+    print(i)
+    i +=1
+
+print("Loop ended")      
