@@ -94,11 +94,11 @@ while count<5:
 while True:
     print("hello")
     count=1
-    while count<=8:
+while count<=8:
      print("hello")
-    count=count+1
+     count=count+1
 
-    print(count)
+print(count)
 
 #print numbers from 1 to 5
 i=1
