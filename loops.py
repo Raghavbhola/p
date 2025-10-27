@@ -78,6 +78,31 @@ for i in range(1,11):
 else:  
     print("table is completed here ")    
     print("Program ends here/End of for-else loop")
+
+#For else loop:->For else execution ke baad else block execute hoga.
+#(1)
+i=int(input("enter a number to check prime or not= "))
+z=int(i**0.5)
+for y in range(2,z+1):
+    if i%y==0:
+        is_prime=False
+        break
+    if is_prime:
+        is_prime=True
+        print(i,"is prime number")
+    else:
+        print(i,"is not a prime number")    
+#(2)
+li=[5,26,32,44,58,43,78,90,11,23]
+for i in li:
+    print(i)
+    break
+else:
+    print("This is else block")
+
+print("Program ends here")
+
+
         
  #While Loop:->It is used to repeat a block of code as long as a condition is true permanently, the loop will run indefinitely.
 #While expression:Loop condition-by default it is ture
