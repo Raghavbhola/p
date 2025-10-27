@@ -99,7 +99,7 @@ while count<=8:
      count=count+1
 
 print(count)
-
+#(3)
 #print numbers from 1 to 5
 i=1
 while i <=5:
@@ -107,3 +107,24 @@ while i <=5:
     i +=1
 
 print("Loop ended")      
+
+
+
+
+#While-else Loop:->same as for-else loop
+#(1)
+count=9
+while count<5:     #Loop condition-ture entered into the loop.
+    print("count is:",count)
+    break
+else:
+    print("Loop ended as the condition became false")
+
+print("outside the loop|program ended")
+#(2)    
+flag=False
+while (flag):          #while True -infinite loop run hoga
+    print("Given flag is false")
+    print("b-bye")
+
+
