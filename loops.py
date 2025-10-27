@@ -107,7 +107,12 @@ while i <=5:
     i +=1
 
 print("Loop ended")      
-
+#(4)
+n=input("enter a number:")
+while n.isnumeric()==True:
+    print("You entered a valid number;")
+    n=input("enter a number")
+    #INFINITE LOOP chalega jab hum n=input(:enter a number") print k baad vala nhi likhe ge.
 
 
 
