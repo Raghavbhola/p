@@ -28,3 +28,29 @@ for letter in "PythonIsAmazingLanguage":
     print(letter,end="-")
 #output
 #P-y-t-h-o-n-I-s-A-m-a-z-i-n-g-L-a-n-g-u-a-g-e-
+#(2)
+for letter in "ABCDEFGHIJKLMNOP":
+    if letter == "D" or letter == "M":
+        pass #does nothing, avoids error
+        print("This is pass block, doing nothing for 'D' or 'M'")
+    print(letter)
+#output
+'''
+A
+B
+C
+This is pass block, doing nothing for 'D' or 'M'
+D
+E
+F
+G
+H
+I
+J
+K
+L
+This is pass block, doing nothing for 'D' or 'M'
+M
+N
+O
+P '''   
