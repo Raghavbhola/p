@@ -164,5 +164,19 @@ flag=False
 while (flag):          #while True -infinite loop run hoga
     print("Given flag is false")
     print("b-bye")
-
-
+#(3)
+user_name=input("enter your username:")
+existing_user=["Navya0","Shubham1","Kunal3","Yash3","Rohit","sagar5","Rajat6","Ankit7"]
+for checking_user in existing_user:
+    if user_name == checking_user:
+        print("Username already exists, please try again with a different username")
+        break
+    else:
+        print("Username is available|You can proceed with the registration")
+#(4)
+li=[45,23,67,32,89,90,12,49,12,49,78,56]
+for item in li:
+    if item == 90:
+      break
+    print("Item is:",item)
+print("Loop ended")        
