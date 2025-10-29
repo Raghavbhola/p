@@ -101,6 +101,14 @@ else:
     print("This is else block")
 
 print("Program ends here")
+#(3)
+num=int(input("enter a number to write table"))
+for i in range(1,11):
+    print(f"{num}*{i}={num*i}")
+    #print(f"{num*i}")
+else:
+    print("Table is completed here, now in else block")
+    print("Program ends here|End of for-else loop")    
 
 
         
