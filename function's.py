@@ -31,5 +31,8 @@ def kids_name(*kids):   #prameterized function with variable number of arguments
 kids_name("Shivani","Rohan","Aarav","Kabir","Kiara")    #Function call with 5 argument
 kids_name("kanish","kashish","rohan")                   #Function call with 3 argument
 kids_name("A","B","c","d","e","f","g")                  #Function call without argument-will not give error because parameter is variable number of arguments.
-
+#*NOTE-the term parameter and argument can be used from the same thing, information that are passed into a function.
+#from a function prospective:->
+#Parameter-is a function listed inside the parenthesis in the function definition.
+#Argument-value that is sent to the function when it is called argument.
 
