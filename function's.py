@@ -36,3 +36,21 @@ kids_name("A","B","c","d","e","f","g")                  #Function call without a
 #Parameter-is a function listed inside the parenthesis in the function definition.
 #Argument-value that is sent to the function when it is called argument.
 
+#KEYWORD ARGUMENT:-> Arguments that are passed to a function by explicity speciafying the parameter name.
+def printInfo(name,age):
+    print("Name:",name)
+    print("Age:",age)
+
+printInfo(age=25,name="kunal")
+printInfo(name="Raghav",age=30)
+printInfo("Shubham",28)
+printInfo("Aman",32)
+'''OUTPUT
+Name: kunal
+Age: 25
+Name: Raghav
+Age: 30
+Name: Shubham
+Age: 28
+Name: Aman
+Age: 32'''
