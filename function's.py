@@ -37,6 +37,7 @@ kids_name("A","B","c","d","e","f","g")                  #Function call without a
 #Argument-value that is sent to the function when it is called argument.
 
 #KEYWORD ARGUMENT:-> Arguments that are passed to a function by explicity speciafying the parameter name.
+#(1)
 def printInfo(name,age):
     print("Name:",name)
     print("Age:",age)
@@ -54,3 +55,11 @@ Name: Shubham
 Age: 28
 Name: Aman
 Age: 32'''
+
+#(2)
+def add():
+    a=int(input("Enter first number:"))   #taking input from use.
+    b=int(input("Enter second number"))   #taking input from use.
+    print(a+b)    #return statement-returns the value to the caller
+
+add()    #function call with argument
