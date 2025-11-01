@@ -63,3 +63,21 @@ def add():
     print(a+b)    #return statement-returns the value to the caller
 
 add()    #function call with argument
+#(3)
+def print_lastName(**p_info): #function with variable number of keyword arguments - **kwargs store all arguments in a dictionary
+    print("Total last name of the person is :", p_info["lastName"]) #printing total number of arguments
+
+print_lastName(lastName="Sharma", firstName="Yash", age=25, city="New Delhi", country="India", pinCode=110001) #function call with four keyword arguments
+print_lastName(firstName="Raghav", age=30, city="Mumbai", lastName="India", pinCode=400001) #function call with three keyword arguments
+print_lastName(lastName="Verma", firstName="Shubham") #function call with two keyword arguments
+#print_lastName() #function call without argument - will not give error
+#(4)
+def kids_name(**kids):       #parameterized function with variable number of argument
+    print("the youngest child is "+kids["youngest"])  #accessing last element
+    #print("end of function")
+
+kids_name(thirdyoungest="shivani",secondyoungest="rohan",youngest="arrav",fourthyoungest="kabir")  #function call with four parameter
+kids_name(youngest="kanish",secondyoungest="rohan",thirdyoungest="kiara")   #function call with three parameter
+kids_name(youngest="verma",secondyoungest="sharma")   #function call with second parameter
+kids_name(fourthyoungest="A",secondyoungest="B",thirdyoungest="C",youngest="D",fifthyoungest="E",sixthyoungest="f")
+
