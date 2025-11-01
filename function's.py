@@ -81,3 +81,75 @@ kids_name(youngest="kanish",secondyoungest="rohan",thirdyoungest="kiara")   #fun
 kids_name(youngest="verma",secondyoungest="sharma")   #function call with second parameter
 kids_name(fourthyoungest="A",secondyoungest="B",thirdyoungest="C",youngest="D",fifthyoungest="E",sixthyoungest="f")
 
+
+#Return type:->return a value and exists the function.
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b    
+def mul(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+def mod(a,b):
+    return a%b
+#add------------------------------------------>
+a=int(input("enter first number:"))
+b=int(input("enter second number"))
+c=10
+d=20
+addtion=add(a,b)
+addtion1=add(c,d)
+addition2=add(100,200)
+
+print("addition:",add(a,b))
+print("addition1:",add(c,d))      #30
+print("addtion3:",add(100,200))   #300
+#MUL------------------------------------------->
+a=int(input("enter first number:"))
+b=int(input("enter second number"))
+c=10
+d=20
+multiply=mul(a,b)
+multiply1=mul(c,d)
+multiply2=mul(100,200)
+
+print("multiply:",mul(a,b))      
+print("multiply1:",mul(c,d))       #200
+print("multiply2:",mul(100,200))   #20000
+#sub-------------------------------------------->
+a=int(input("enter first number:"))
+b=int(input("enter second number"))
+c=10
+d=20
+subtraction=mul(a,b)
+subtraction1=mul(c,d)
+subtraction2=mul(100,200)
+
+print("subtraction:",sub(a,b))      
+print("subtraction1:",sub(c,d))       #-10
+print("subtraction2:",sub(100,200))   #-100
+#div-------------------------------------------->
+a=int(input("enter first number:"))
+b=int(input("enter second number"))
+c=10
+d=20
+division=div(a,b)
+division1=div(c,d)
+division2=div(100,200)
+
+print("division:",div(a,b))      
+print("division1:",div(c,d))       #0.5
+print("division2:",div(100,200))   #0.5
+#module----------------------------------------->
+a=int(input("enter first number:"))
+b=int(input("enter second number"))
+c=10
+d=20
+module=mod(a,b)
+module1=mod(c,d)
+module2=mod(100,200)
+
+print("module:",mod(a,b))      
+print("module:",mod(c,d))       #10
+print("module2:",mod(100,200))   #100
