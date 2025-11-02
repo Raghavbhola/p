@@ -83,6 +83,7 @@ kids_name(fourthyoungest="A",secondyoungest="B",thirdyoungest="C",youngest="D",f
 
 
 #Return type:->return a value and exists the function.
+#(1)
 def add(a,b):
     return a+b
 def sub(a,b):
@@ -153,3 +154,30 @@ module2=mod(100,200)
 print("module:",mod(a,b))      
 print("module:",mod(c,d))       #10
 print("module2:",mod(100,200))   #100
+#(2)
+def add(x,y):
+    pass
+def sub(x,y):
+    pass
+def mul(x,y):
+    pass
+def div(x,y):
+    pass
+
+x=int(input("enter first number:"))
+y=int(input("enter second number:"))
+add(x,y)
+sub(x,y)
+mul(x,y)
+div(x,y)
+print("end of the person",x,y)
+
+#Recurrsion:-> When a Function calls itself reapeatedly.                **Coders avoid recurrsion.
+#(1)
+def my_function(x,y):
+    print(x**3)
+
+my_function(10,5)      #1000
+my_function(x=1,y=5)   #1
+my_function(89,9)      #704969
+my_function(999,32)    #99702999
