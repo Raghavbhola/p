@@ -225,3 +225,16 @@ print(factorial(5))
 print(factorial(4))    
 print(factorial(25))
 #print(factorial(1000))
+s#(3)-------------------->
+def main(food):
+    for i in food:
+        print(i*2)
+
+#main(s)
+#food (["apple","banana","cherry","orange","kiwi","Mango"])  
+#main (["sandwich","burger","pizza","pasta","salad"])
+#main (food)
+food=["apple","banana","cherry","orange","kiwi","Mango"]
+main(food)
+food1=["carrot","patato","cabbage","onion","spinach"]
+main(food1)
