@@ -189,3 +189,27 @@ my_function(y=3,x=4)    #64  /27
 #my_function(10,5)     #Type error:-my_function() takes 0 positional arguments but 2 were given
 #-----------------------------------------------------------------------------------------------------
 #Recurrsion:-> When a Function calls itself reapeatedly.                **Coders avoid recurrsion.
+#(1)
+#(1)-------------------->
+def show(n):
+    if (n==0):
+        return
+    print(n)
+    show(n-1)
+    print("END")
+    
+show(3)
+#show(5)    
+#(2)---------------------------->
+def recur_func(n):
+    if n>0:
+        result=n+recur_func(n-1)
+        print(result)
+    else:
+        result=0
+        print(result)
+    return result 
+
+#recur_func(5)
+recur_func(3)
+#recur_func(10)
