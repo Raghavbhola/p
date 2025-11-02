@@ -4,7 +4,7 @@
 #(1)built-in function:-print(),input(),len(),type(),str(),float(),sum(),Min(),Max(),obs(),round()
 #(2)User-defined function:-> functions defined by the user using def keyword.
 #(3)Function syntax:->def function_name(parameters "self" must to be provided).
-#(1)
+#(1)---------------------------------------------------------->
 def greet():
     print("Hello,Good morning!")
     li=[1,2,3,4,5,6,7,8,9,10]
@@ -27,7 +27,7 @@ def kids_name(*kids):   #prameterized function with variable number of arguments
     print("Total number of kids:",len(kids))  #printing total no. of arguments
     print("the youngest child is",kids[len(kids)-1])  #accessing last elements
     print("End of function")          #Printing all elements
-#(2)
+#(2)--------------------------------------------------->
 kids_name("Shivani","Rohan","Aarav","Kabir","Kiara")    #Function call with 5 argument
 kids_name("kanish","kashish","rohan")                   #Function call with 3 argument
 kids_name("A","B","c","d","e","f","g")                  #Function call without argument-will not give error because parameter is variable number of arguments.
@@ -35,9 +35,9 @@ kids_name("A","B","c","d","e","f","g")                  #Function call without a
 #from a function prospective:->
 #Parameter-is a function listed inside the parenthesis in the function definition.
 #Argument-value that is sent to the function when it is called argument.
-
+#-------------------------------------------------------------------------------------------------------
 #KEYWORD ARGUMENT:-> Arguments that are passed to a function by explicity speciafying the parameter name.
-#(1)
+#(1)-------------------------------->
 def printInfo(name,age):
     print("Name:",name)
     print("Age:",age)
@@ -56,14 +56,14 @@ Age: 28
 Name: Aman
 Age: 32'''
 
-#(2)
+#(2)--------------------------------------------------------------------->
 def add():
     a=int(input("Enter first number:"))   #taking input from use.
     b=int(input("Enter second number"))   #taking input from use.
     print(a+b)    #return statement-returns the value to the caller
 
 add()    #function call with argument
-#(3)
+#(3)-------------------------------------------------------------------------->
 def print_lastName(**p_info): #function with variable number of keyword arguments - **kwargs store all arguments in a dictionary
     print("Total last name of the person is :", p_info["lastName"]) #printing total number of arguments
 
@@ -71,7 +71,7 @@ print_lastName(lastName="Sharma", firstName="Yash", age=25, city="New Delhi", co
 print_lastName(firstName="Raghav", age=30, city="Mumbai", lastName="India", pinCode=400001) #function call with three keyword arguments
 print_lastName(lastName="Verma", firstName="Shubham") #function call with two keyword arguments
 #print_lastName() #function call without argument - will not give error
-#(4)
+#(4)----------------------------------------------------------------------------->
 def kids_name(**kids):       #parameterized function with variable number of argument
     print("the youngest child is "+kids["youngest"])  #accessing last element
     #print("end of function")
@@ -81,9 +81,9 @@ kids_name(youngest="kanish",secondyoungest="rohan",thirdyoungest="kiara")   #fun
 kids_name(youngest="verma",secondyoungest="sharma")   #function call with second parameter
 kids_name(fourthyoungest="A",secondyoungest="B",thirdyoungest="C",youngest="D",fifthyoungest="E",sixthyoungest="f")
 
-
+#------------------------------------------------------------------------------------------------------------------------------------
 #Return type:->return a value and exists the function.
-#(1)
+#(1)---->
 def add(a,b):
     return a+b
 def sub(a,b):
@@ -171,9 +171,7 @@ sub(x,y)
 mul(x,y)
 div(x,y)
 print("end of the person",x,y)
-
-#Recurrsion:-> When a Function calls itself reapeatedly.                **Coders avoid recurrsion.
-#(1)
+#(3)--------------------------------------------->
 def my_function(x,y):
     print(x**3)
 
@@ -181,3 +179,13 @@ my_function(10,5)      #1000
 my_function(x=1,y=5)   #1
 my_function(89,9)      #704969
 my_function(999,32)    #99702999
+#(2)---------------------------------------------->
+def my_function(*,x,y):  #keyword only parameter
+    print(x**3)
+    print(y**3)
+
+my_function(x=10,y=5)   #1000 /125
+my_function(y=3,x=4)    #64  /27
+#my_function(10,5)     #Type error:-my_function() takes 0 positional arguments but 2 were given
+#-----------------------------------------------------------------------------------------------------
+#Recurrsion:-> When a Function calls itself reapeatedly.                **Coders avoid recurrsion.
