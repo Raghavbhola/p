@@ -213,3 +213,15 @@ def recur_func(n):
 #recur_func(5)
 recur_func(3)
 #recur_func(10)
+#(3)-------------------->
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        print(n)
+        return n*factorial(n-1)
+    
+print(factorial(5))
+print(factorial(4))    
+print(factorial(25))
+#print(factorial(1000))
