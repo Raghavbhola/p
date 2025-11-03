@@ -188,7 +188,7 @@ my_function(x=10,y=5)   #1000 /125
 my_function(y=3,x=4)    #64  /27
 #my_function(10,5)     #Type error:-my_function() takes 0 positional arguments but 2 were given
 #-----------------------------------------------------------------------------------------------------
-#Recurrsion:-> When a Function calls itself reapeatedly.                **Coders avoid recurrsion.
+#Recursion:-> When a Function calls itself reapeatedly.                **Coders avoid recurrsion.
 #(1)
 #(1)-------------------->
 def show(n):
@@ -238,7 +238,27 @@ food=["apple","banana","cherry","orange","kiwi","Mango"]
 main(food)
 food1=["carrot","patato","cabbage","onion","spinach"]
 main(food1)
-#-------------------------------------------------------------------------------------------
+#Let's practice:-write a recursive function to calculate the sum of first n natual numbers.
+'''def calc_sum(n):
+    if (n==0):
+        return 0
+    return calc_sum(n-1) + n
+
+sum = calc_sum(20)   
+print(sum) '''
+#write a recursive function to print all elements in a list.
+#Hint:use list & index as parameters.
+def print_list(list, idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    print_list(list, idx+1)
+
+fruits =["mango","litchi","apple","banana"]
+
+print_list(fruits)
+
+#----------------------------------------------------------------------------------------------
 #Scope of variable:->Local, global and Non-local.
 #Local variable:-defined inside a function and can be accessed that function.
 #Global variable:-defined outside a function and can be accessed anywhere in the program.
