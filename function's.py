@@ -213,7 +213,7 @@ def recur_func(n):
 #recur_func(5)
 recur_func(3)
 #recur_func(10)
-#(3)-------------------->
+#(3)--------------------------->
 def factorial(n):
     if n==0 or n==1:
         return 1
@@ -225,7 +225,7 @@ print(factorial(5))
 print(factorial(4))    
 print(factorial(25))
 #print(factorial(1000))
-s#(3)-------------------->
+#(3)--------------------------->
 def main(food):
     for i in food:
         print(i*2)
@@ -238,3 +238,19 @@ food=["apple","banana","cherry","orange","kiwi","Mango"]
 main(food)
 food1=["carrot","patato","cabbage","onion","spinach"]
 main(food1)
+#-------------------------------------------------------------------------------------------
+#Scope of variable:->Local, global and Non-local.
+#Local variable:-defined inside a function and can be accessed that function.
+#Global variable:-defined outside a function and can be accessed anywhere in the program.
+x=int(input("enter a number:"))
+
+def find_even_odd(num):
+    print(f"The number {num} is being checked")
+    if num%2==0:
+        return"even"
+    else:
+        return"odd"
+    
+result=find_even_odd(x)
+print(f"The number{x} is {result}")
+    
