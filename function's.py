@@ -323,5 +323,41 @@ def myfunction():
 
 myfunction()
 print(myfunction())  
+#---------------------------------------------------------------------------------------------------------------------------
+#Name space conflict:->If variable with same name in local and global,then iterpreter gives priority to local Namespace.
+marks=50          #this is a global variable
+def myfunction():
+    marks=70
+    print(marks)  #this is a local variable
 
-    
+myfunction()    #70
+print(marks)    #50   
+#*Manupulation of a global variable inside a function is not allowed when you are not redefining the variable.
+marks=50     #this is a global variable
+def myfunction():
+    marks=70
+    marks=marks+20
+    print(marks) #this is a local variable
+
+myfunction()    #90
+print(marks)    #50
+
+#OPTION 1:**Manupulation of a variable inside a function is allowed only when you are defining inside a function with keyword "global".
+marks=50        #this is a global variable 
+def myfunction():
+    global marks
+    marks =marks+20
+    print(marks)      #this is a local variable     #70
+    print(globals())
+
+myfunction()
+print(marks)   #70
+#OPTION 2:**
+marks=50     #this is a global variable
+def myfunction():
+    globals()['marks']=globals()['marks']+20
+    print(marks)  #this is a local variable
+    #print(globals())
+
+myfunction()
+print(marks)    #70
