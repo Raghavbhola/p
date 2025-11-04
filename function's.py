@@ -273,4 +273,55 @@ def find_even_odd(num):
     
 result=find_even_odd(x)
 print(f"The number{x} is {result}")
+#Non-local=defined inside a nested function and can be accessed in the nested function.
+def your_A_and_B():
+    a=10
+    b=20
+    def my_A_and_B():
+        nonlocal a,b
+        a=30
+        b=40   
+    print("Inside inner function:",a+b+c)
+    return a+b+x   
+#print(my_A_and_B())
+#print("After inner function call:"my_A_and_B)
+print(your_A_and_B)
+print("outside function:",a,b)
+print(globals())
+print(locals())
+
+#(1)------------------>
+name="Akash"
+marks=90
+result=True
+
+def myfunction():
+    a=10
+    b=20
+    c=a+b
+    print(globals())
+    print(locals())
+    return c
+
+myfunction()
+print(myfunction())  
+#(2)----------------->
+name="Akash"
+marks=90
+result=True
+
+def myfunction():
+    a=10
+    b=20
+    c=a+b
+    print(globals())
+    print(locals())
+    print(globals()['name'])
+    print(globals().get('a'))
+    print(locals()['b'])
+    return c
+
+myfunction()
+print(myfunction())  
+
     
