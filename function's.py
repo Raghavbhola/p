@@ -361,3 +361,13 @@ def myfunction():
 
 myfunction()
 print(marks)    #70
+
+#Name error:->IF variable is defined inside a function and trying to access the function.
+def my_function(a:int,b:int):
+    print(type(a),type(b))
+    c=a+b
+    return c
+
+print(my_function(10,20))                       #30
+print(my_function("hello"," world "))           #hello world
+print(my_function("Hello"," My sweetheart "))   #Hello My sweetheart 
