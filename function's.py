@@ -371,3 +371,27 @@ def my_function(a:int,b:int):
 print(my_function(10,20))                       #30
 print(my_function("hello"," world "))           #hello world
 print(my_function("Hello"," My sweetheart "))   #Hello My sweetheart 
+print(my_function(50,50))                       #100
+print(my_function(100000,999009))               #1099009
+#-------------------------------------ANNOTATION--------------------------------------------------------------------
+#**Annotation are ignored at run time. They mostly used while executing [IDE] & Static type checker libraries.
+
+#function Annotation with return type
+def add_numbers(a:int,b:int)->int:
+    return a+b
+
+print(add_numbers(5,10))      #15
+print(add_numbers.__annotations__)
+#&
+def add_numbers(a:int,b:int):
+    return a+b
+
+print(add_numbers(5,10))      #15
+print(add_numbers.__annotations__)
+#&
+def add_numbers(a:int,b:int):
+    return a+b
+
+print(add_numbers(5,10))      #15
+print(add_numbers("hello"," baby"))
+print(add_numbers.__annotations__)
