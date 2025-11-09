@@ -60,3 +60,36 @@ result=sum_function(10)
 print(result(20))         #10240000000000
 result=sum_function(20)
 print(result(100))        #10000000000000000000000000000000000000000
+#(5)------------------------------->
+def sum_function(n):
+    return lambda a: a+n
+
+print(sum_function(10)(5999))   #6009
+print(sum_function(10)(29860))  #29870
+
+result=sum_function(90)
+print(result(205637287))         #205637377
+result=sum_function(200100000000000000000)
+print(result(187676987687367000)) #200287676987687367000
+#(6)------------------------------->
+def sum_function(n):
+    return lambda a: a-n
+
+print(sum_function(10)(5999))   #5989
+print(sum_function(10)(29860))  #29850
+
+result=sum_function(90)
+print(result(205637287))         #205637197
+result=sum_function(200100000000000000000)
+print(result(187676987687367000)) #-199912323012312633000
+#(7)------------------------------->
+def sum_function(n):
+    return lambda a: a/n
+
+print(sum_function(10)(5999))   #599.9
+print(sum_function(10)(29860))  #2986.0
+
+result=sum_function(90)
+print(result(205637287))         #2284858.7444444443
+result=sum_function(200100000000000000000)
+print(result(11234556))          #5.614470764617691e-14
