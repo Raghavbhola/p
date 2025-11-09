@@ -23,3 +23,40 @@ w=lambda a,b,c: a+b+c
 print(w(500,100,200))      #800
 print(w(999,999,99))       #2097
 print(w(66600,8880,3330))  #78810
+
+# Use of Lambda function:->The power of lambda function is good when you them as an anonymous function inside another function.
+#(1)------------------------------->
+def sum_function(n):
+    return lambda a: a*n
+
+print(sum_function(10)(5))   #50
+print(sum_function(10)(20))  #200
+#(2)------------------------------->
+def sum_function(n):
+    return lambda a: a%n
+
+print(sum_function(10)(5))   #50
+print(sum_function(10)(20))  #200
+#(3)------------------------------->
+def sum_function(n):
+    return lambda a: a*n
+
+print(sum_function(10)(5))   #50
+print(sum_function(10)(20))  #200
+
+result=sum_function(10)
+print(result(20))         #200
+result=sum_function(200)
+print(result(100))        #20000
+
+#(4)-------------------------------->
+def sum_function(n):
+    return lambda a: a**n
+
+print(sum_function(10)(5))   #9765625
+print(sum_function(10)(20))  #10240000000000
+
+result=sum_function(10)
+print(result(20))         #10240000000000
+result=sum_function(20)
+print(result(100))        #10000000000000000000000000000000000000000
