@@ -93,3 +93,28 @@ result=sum_function(90)
 print(result(205637287))         #2284858.7444444443
 result=sum_function(200100000000000000000)
 print(result(11234556))          #5.614470764617691e-14
+#-------------------------------------------------------------------------------------------------------
+# Lambda function are often used with built-in functions like filter(),Sorted() and reduce()
+
+#Filter():- Functions creates a list of items for which the function returns true.
+numbers=(5,10,15,20,25,30,35,40,45,50,55,60)
+even_numbers=tuple(filter(lambda x:x%2==0,numbers))
+print(even_numbers)      #(10, 20, 30, 40, 50, 60)
+
+odd_numbers=tuple(filter(lambda x:x**2<1000,numbers))
+print(odd_numbers)      #(5, 10, 15, 20, 25, 30)
+
+#Map():->Functions applies a given function to all items in an input list
+numbers=(5,10,15,20,25,30,35,40,45,50,55,60)
+squared_numbers=tuple(map(lambda x:x**2,numbers))   #**Map
+print(squared_numbers)  #(25, 100, 225, 400, 625, 900, 1225, 1600, 2025, 2500, 3025, 3600)
+
+#Sorted():-> Function returns a sorted list of the specified iterable object.
+#**When we sort then, we need to sorted as key. because key makes list
+fruits=['banana','apple','cherry','kiwi','mango','orange','papaya']  
+sorted_fruits=sorted(fruits,key=lambda x: len(x))  #sort by length
+print(sorted_fruits)    #['kiwi', 'apple', 'mango', 'banana', 'cherry', 'orange', 'papaya']
+
+fruits=['banana','apple','cherry','kiwi','mango','orange','papaya','blueberry','strawberry','fig'] 
+sorted_fruits=sorted(fruits,key=lambda x: len(x))
+print(sorted_fruits)    #['fig', 'kiwi', 'apple', 'mango', 'banana', 'cherry', 'orange', 'papaya', 'blueberry', 'strawberry']
