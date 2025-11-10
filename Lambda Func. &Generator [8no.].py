@@ -118,3 +118,52 @@ print(sorted_fruits)    #['kiwi', 'apple', 'mango', 'banana', 'cherry', 'orange'
 fruits=['banana','apple','cherry','kiwi','mango','orange','papaya','blueberry','strawberry','fig'] 
 sorted_fruits=sorted(fruits,key=lambda x: len(x))
 print(sorted_fruits)    #['fig', 'kiwi', 'apple', 'mango', 'banana', 'cherry', 'orange', 'papaya', 'blueberry', 'strawberry']
+
+#Generator:->Function that return an iterable set of items, one at a time, in a special way.
+#            The generate values on the fly and do not store them in memory, making efficient for large datasets compared to lists.
+#NOTE:-Generator are the functions that are pause and resume their execution.
+#(1)--------------------------->
+#li=[1,2,3,4,5,6,7]
+#for value in li:
+ #   print(value,end=",") #1,2,3,4,5,6,7
+
+def my_func():
+    print("start")
+    return[1,2,3,4,5,6,7]
+
+def my_generator():
+    yield 1,13,14,15,16,
+    yield 2
+    yield 3
+    yield 4
+    yield 5
+
+gen=my_generator()
+
+#print(value)              #7
+print(type(my_generator))  #<class 'function'>
+print(id(50))              #140708160043336
+print(my_func)             #<function my_func at 0x0000024A30A71080>
+#(2)--------------------------------->
+def my_func():
+    print("start")
+    return[1,2,3,4,5,6,7]
+
+def my_generator():
+    yield 1,13,14,15,16,
+    yield 2
+    yield 3
+    yield 4
+    yield 5
+
+gen=my_generator()
+
+print(next(gen))  #(1, 13, 14, 15, 16)
+print(next(gen))  #2
+print(next(gen))  #3
+print(next(gen))  #4
+print(next(gen))  #5
+#print(next(gen))   #This will raise stopiteration error
+
+#gen=my_generator
+#print(gen(3))    #This will give error
