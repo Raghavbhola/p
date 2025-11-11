@@ -167,3 +167,36 @@ print(next(gen))  #5
 
 #gen=my_generator
 #print(gen(3))    #This will give error
+
+#NOTE-(1)yeild is keyword or it's a compulsary in generator, yield is normal function,unique and who defines generator. 
+#    (2)Never yeild incounter the function,The value is run whenever, next time generator is called it continous from where it left off.
+#       Never generator store a value. 
+#** huge-range Generator:->
+#(1)---------------->
+def huge_range(n):
+    for i in range(n):
+        print(i)
+
+print(huge_range(100))
+#(2)---------------->
+def huge_range(n):
+    for i in range(n):
+        yield i
+
+gen=huge_range(100)
+
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+ 
+#for value in gen:
+#    print(value) 
+#--------------------
+#def huge_range(n):
+#    for i in range(n):
+#        yield i
+
+#print(i) 
+
+#gen=huge_range(100)
