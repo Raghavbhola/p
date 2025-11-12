@@ -234,3 +234,35 @@ def fibonacci_generator():
 fib_gen=fibonacci_generator()
 for _ in range (120):
     print(next(fib_gen)) 
+
+#Send():-It allows you to send data (a value) to the generators.
+def echo_generator():
+    while True:
+        got_value=yield
+        print  ("The value is:-", got_value)
+
+gen=echo_generator()
+next(gen)
+gen.send("Raghav")
+gen.send("Shubham")
+gen.send("parth")    
+gen.send("Akash") 
+gen.send("Kunal")
+
+#print(type(Shubham)) #This will give you name error.
+#print(id(Shubham))
+
+#Close:-This method is use to step the generator 
+def my_gen():
+    try:
+        yield 1
+        yield 2
+        yield 3
+        yield 4
+    finally:
+        print("Generator closed")
+
+gen=my_gen()
+print(next(gen))
+gen.close()
+#NOTE:->Finally:-> m print hoga hi hoga ...or yeh try: or Catch: ke sath hi use hoga.
