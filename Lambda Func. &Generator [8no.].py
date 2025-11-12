@@ -200,3 +200,37 @@ print(next(gen))
 #print(i) 
 
 #gen=huge_range(100)
+
+#**Fabonacci series:-> Previous two numbers-->Sum
+#(1)------------->
+li=[]
+def f_series(n):
+    #li.append(n)
+    if n<=1:
+        return n
+    else:
+        return f_series(n-1) + f_series(n-2)
+
+print(f_series(2))   
+print(sum(li))
+print(li)
+#(2)----------------------->
+def fibonacci_generator():
+    a,b,=0,1
+    while True:
+        yield a 
+        a,b=b,a+b
+
+fib_gen=fibonacci_generator()
+for _ in range (100):
+    print(next(fib_gen))       
+#(3)----------------------->
+def fibonacci_generator():
+    a,b,=0,1
+    while True:
+        yield a 
+        a,b=b,a+b
+
+fib_gen=fibonacci_generator()
+for _ in range (120):
+    print(next(fib_gen)) 
