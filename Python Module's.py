@@ -52,3 +52,28 @@ print(dir(math))
 
 import matplotlib
 print(dir(matplotlib))
+
+#Predefined/Build-in modules:->like modules already defined on Python path.
+#(1)------------->
+a=[12,21,43,224,5,73,76,67,775,336,77,1224]
+
+print(max(a))   #1224
+print(min(a))   #5
+print(sum(a))   #2933
+  
+import random
+print(dir(random))
+print(random.randiant(1,100))   
+
+#randiant:->Where to start and where to end, and it only prints integer values.
+#Random:->only have print 16 or 17 digit, This can start from a point and anyone can generate it, and it generates uniquely.
+#(1)--------------------->
+import random
+print(dir(random))
+random.randint(1,10000)
+print(random.random())
+#(2)--------------------->
+import math
+print(math.sqrt(16))   #4.0
+print(math.pi)         #3.141592653589793
+#print(math)
