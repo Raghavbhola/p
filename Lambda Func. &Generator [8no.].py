@@ -253,6 +253,7 @@ gen.send("Kunal")
 #print(id(Shubham))
 
 #Close:-This method is use to step the generator 
+#(1)----------------->
 def my_gen():
     try:
         yield 1
@@ -266,3 +267,30 @@ gen=my_gen()
 print(next(gen))
 gen.close()
 #NOTE:->Finally:-> m print hoga hi hoga ...or yeh try: or Catch: ke sath hi use hoga.
+#(2)------------------------->
+def my_gen():
+    try:
+        yield 1
+        yield 2
+        yield 3
+        yield 4
+    finally:
+        print("Generator closed")
+
+gen=my_gen()
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+gen.close()
+#print(next(gen))
+
+#NOTE->*Stack-Last-in,First-out[LIFO]
+#      *Queue-First-out,First-out[FIFO]
+#      *Push-enter a person
+# ----------------------------------LIST------------------------------------------------------
+#ordered, changeable and allow duplicates, and items are indexed.
+li=["apple","banana","guava","peach","cherry","guava","peach"]      
+S="this is a good boy"
+li[0]="raghav"
+print(li)
