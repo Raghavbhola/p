@@ -288,9 +288,49 @@ gen.close()
 #NOTE->*Stack-Last-in,First-out[LIFO]
 #      *Queue-First-out,First-out[FIFO]
 #      *Push-enter a person
-# ----------------------------------LIST------------------------------------------------------
+# ---------------------------------------------LIST------------------------------------------------------
 #ordered, changeable and allow duplicates, and items are indexed.
+#(1)---------------->
 li=["apple","banana","guava","peach","cherry","guava","peach"]      
 S="this is a good boy"
 li[0]="raghav"
-print(li)
+print(li)    #['raghav', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach']
+#(2)--------------->
+li=["apple","banana","guava","peach","cherry","guava","peach","cherry"]
+print(li[5])  #guava
+print(li)     #['apple', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach', 'cherry']
+#(3)--------------->
+t1=list(('apple','guava','peach','cherry'))
+print(t1)       #['apple', 'guava', 'peach', 'cherry']
+print(S[-3])    #b
+print(li[-3])   #guava
+print(li[-5:])  #['peach', 'cherry', 'guava', 'peach', 'cherry']
+#(4)----------------->
+nam=["aakash","Karan","kunal","shubham"]
+print(nam[-1])         #shubham
+print(nam[-4:-1])      #['aakash', 'Karan', 'kunal']
+print(nam[-3])         #Karan
+print(nam[-5:-2])      #['aakash', 'Karan']
+print(nam)             #['aakash', 'Karan', 'kunal', 'shubham', 'Rajat', 'Right']
+print(len(nam))        #6
+nam.insert(2,"Shubham")
+print(nam)             #['aakash', 'Karan', 'Shubham', 'kunal', 'shubham', 'Rajat', 'Right']
+nam.insert(6,"yes")
+print(nam)             #['aakash', 'Karan', 'Shubham', 'kunal', 'shubham', 'Rajat', 'yes', 'Right']
+#(5)----------------->
+li=["apple","banana","guava","peach","cherry","guava","peach"]
+li.remove("peach")
+print("Remove the element sucessfully")
+print(li)              #['apple', 'banana', 'guava', 'cherry', 'guava', 'peach']
+#pop:->Remove an element
+li.pop()
+print(li)              #['apple', 'banana', 'guava', 'cherry', 'guava']
+li.pop(3)
+print(li)              #['apple', 'banana', 'guava', 'guava']
+
+del li[0]
+#li.clear()
+print("Remove the element sucessfully")
+print(li)              #['banana', 'guava', 'guava']
+li.clear()
+print(li)              #[]
