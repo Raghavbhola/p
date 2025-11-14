@@ -334,3 +334,33 @@ print("Remove the element sucessfully")
 print(li)              #['banana', 'guava', 'guava']
 li.clear()
 print(li)              #[]
+
+li.sort()
+print(li)              #[]
+#sort:-> list ke elements ko ascending ya descending order mein arrange karna.
+nums = [5, 2, 9, 1]
+nums.sort()
+print(nums)            #[1, 2, 5, 9]
+
+li.sort(reverse=True)
+print(li)              #[]
+
+mylist=li.copy()
+print(mylist)          #[]
+
+mylist=list(li)
+mylist=li.copy()
+print(mylist)          #[]
+mylist=li[2:]
+#mylist=li[:]          #Slice method/operator
+#print(mylist)
+#(5)---------------->
+li=["apple","banana","guava","peach","cherry","guava","peach","cherry","chocolate"]
+li1=["aakash","Karan","kunal","shubham"]
+l1=li.count("cherry")
+print(l1)             #2
+
+l=li1+li
+print(l)              #['aakash', 'Karan', 'kunal', 'shubham', 'apple', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach', 'cherry', 'chocolate']
+li.extend(li1)
+print(li)             #['apple', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach', 'cherry', 'chocolate', 'aakash', 'Karan', 'kunal', 'shubham']
