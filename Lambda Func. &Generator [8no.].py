@@ -354,7 +354,7 @@ print(mylist)          #[]
 mylist=li[2:]
 #mylist=li[:]          #Slice method/operator
 #print(mylist)
-#(5)----------------> 
+#(6)----------------> 
 li=["apple","banana","guava","peach","cherry","guava","peach","cherry","chocolate"]
 li1=["aakash","Karan","kunal","shubham"]
 l1=li.count("cherry")
@@ -366,7 +366,7 @@ li.extend(li1)
 print(li)             #['apple', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach', 'cherry', 'chocolate', 'aakash', 'Karan', 'kunal', 'shubham']
 li1.extend(li)
 print(li)             #['apple', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach', 'cherry', 'chocolate', 'aakash', 'Karan', 'kunal', 'shubham']
-#---List comprehension:->> A concise way to create list. ------------------------------------------------------------------------------------------------
+#---(7)-List comprehension:->> A concise way to create list. ------------------------------------------------------------------------------------------------
 li=["apple","banana","guava","peach","cherry","guava","peach","cherry","chocolate"]
 li1=["aakash","Karan","kunal","shubham"]
 #(1)--------------------->
@@ -397,5 +397,23 @@ print(lc)            #['peach', 'cherry', 'peach', 'cherry', 'chocolate']
 lc=[x for x in li if "y" in x]     #Lambda function
 print(lc)            #['cherry','cherry']
 #---------------------------------->
-#lc1=[ x for x in li if != "peach"] #not in peach
-#print(lc1)
+lc1=[x for x in li if x != "peach"] #not in peach
+print(lc1)          #['apple', 'banana', 'guava', 'cherry', 'guava', 'cherry', 'chocolate']
+
+#(8)------------------------------>
+li=["apple","banana","guava","peach","cherry","guava","peach","cherry","chocolate"]
+li1=["aakash","Karan","kunal","shubham"]
+#------------------------------------->
+lc=[x for x in range(100)]
+print(lc)           #0 to 99
+lc=[x for x in range(100) if x%2 != 0]
+print(lc)           
+lc=[x for x in range(100) if x%2== 0 and x%3==0]
+print(lc)
+lc=[x*5 for x in range(100) if x%2== 0 and x%3==0]
+#--------------------------------------->
+print(lc)
+lc=[x.upper() for x in li]
+print(lc)          #['APPLE', 'BANANA', 'GUAVA', 'PEACH', 'CHERRY', 'GUAVA', 'PEACH', 'CHERRY', 'CHOCOLATE']
+lc=['Karan eats ' + x for x in li]
+print(lc)          #['Karan eats apple',..... 'Karan eats chocolate'
