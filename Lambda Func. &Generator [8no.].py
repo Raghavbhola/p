@@ -354,7 +354,7 @@ print(mylist)          #[]
 mylist=li[2:]
 #mylist=li[:]          #Slice method/operator
 #print(mylist)
-#(5)---------------->
+#(5)----------------> 
 li=["apple","banana","guava","peach","cherry","guava","peach","cherry","chocolate"]
 li1=["aakash","Karan","kunal","shubham"]
 l1=li.count("cherry")
@@ -364,3 +364,38 @@ l=li1+li
 print(l)              #['aakash', 'Karan', 'kunal', 'shubham', 'apple', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach', 'cherry', 'chocolate']
 li.extend(li1)
 print(li)             #['apple', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach', 'cherry', 'chocolate', 'aakash', 'Karan', 'kunal', 'shubham']
+li1.extend(li)
+print(li)             #['apple', 'banana', 'guava', 'peach', 'cherry', 'guava', 'peach', 'cherry', 'chocolate', 'aakash', 'Karan', 'kunal', 'shubham']
+#---List comprehension:->> A concise way to create list. ------------------------------------------------------------------------------------------------
+li=["apple","banana","guava","peach","cherry","guava","peach","cherry","chocolate"]
+li1=["aakash","Karan","kunal","shubham"]
+#(1)--------------------->
+lc=[]
+for x in li:
+    if 'a' in x:
+        lc.append(x)
+
+print(lc)            #['apple', 'banana', 'guava', 'peach', 'guava', 'peach', 'chocolate']
+#---------------------->
+lc=[]
+for x in li:
+    if 'b' in x:
+        lc.append(x)
+
+print(lc)            #['banana']
+#---------------------->
+lc=[]
+for x in li:
+    if 'p' in x:
+        lc.append(x)
+
+print(lc)            #['apple', 'peach', 'peach']
+#(2)------------------------------->
+lc=[x for x in li if "c" in x]     #Lambda function
+print(lc)            #['peach', 'cherry', 'peach', 'cherry', 'chocolate']
+#-------------------------------->
+lc=[x for x in li if "y" in x]     #Lambda function
+print(lc)            #['cherry','cherry']
+#---------------------------------->
+#lc1=[ x for x in li if != "peach"] #not in peach
+#print(lc1)
