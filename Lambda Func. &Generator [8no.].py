@@ -452,4 +452,5 @@ x=max(a)         #return the maximum value
 y=min(a)         #return the minimum value
 z=len(a)         #return the length of the tuple
 f=sum(a)         #return the sum of all element in the tuple
-print(x,y,z,f)
+print(x,y,z,f)   #5 1 5 15 
+print(x,y,z,f, sep=",")  #5,1,5,15
