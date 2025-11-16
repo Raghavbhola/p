@@ -417,3 +417,39 @@ lc=[x.upper() for x in li]
 print(lc)          #['APPLE', 'BANANA', 'GUAVA', 'PEACH', 'CHERRY', 'GUAVA', 'PEACH', 'CHERRY', 'CHOCOLATE']
 lc=['Karan eats ' + x for x in li]
 print(lc)          #['Karan eats apple',..... 'Karan eats chocolate'
+#-----------------------------------------Tuple--------------------------------------------------------------
+#NOTE- Tuple append nhi karta becoz tuple are immutable
+#      but you have to change a value in a tuple by converting it to list and back to a tuple.
+a=(1,2,3,4,5)
+a.append(6) #This will raise an Attribute Error since tuple are immutable.
+a[2]=10     #This will raise a TypeError since tuples do not support item assignment.
+a.pop()     #This will raise an AttributeError since tuples don not have a pop method.
+
+temp=list(a)
+temp[2]=10
+a=tuple(temp)
+print(a)          #(1, 2, 10, 4, 5)
+print(type(a))    #<class 'tuple'>
+#-------------------------------
+temp.append("Apple")  #add on element
+a=tuple(temp)
+print(a)          #(1, 2, 10, 4, 5, 'Apple')
+#------------------------------
+temp.pop(0)       #remove an element
+a=tuple(temp)
+print(a)          #(2, 10, 4, 5, 'Apple')
+#-------------------------------
+b=("Apple","Banana","Cherry","Mango")
+c=a+b       #concatination-Add two tuples
+print(c)          #(2, 10, 4, 5, 'Apple', 'Apple', 'Banana', 'Cherry', 'Mango')
+print(type(c))    #<class 'tuple'>
+#--------------------------------
+z=a.count(3)      #Counts the number of occurrences of a value.
+print(z)          #0
+
+#z1=a.index(5)
+x=max(a)         #return the maximum value
+y=min(a)         #return the minimum value
+z=len(a)         #return the length of the tuple
+f=sum(a)         #return the sum of all element in the tuple
+print(x,y,z,f)
