@@ -38,8 +38,32 @@ a, b, c, d = 10, 20, 30, 40
 arr2 = ModArr.array('i', [a, b, c, d])
 print(arr2, type(arr2))             #array('i', [10, 20, 30, 40]) <class 'array.array'>
 
-#----------------------------------Accessing array elements----------------------------------------------
+#(3)----------------------------------Accessing array elements----------------------------------------------
 arr=ModArr.array('d',[1,2,3,4,5])  #Array of integer
 print(arr, type(arr)) 
 print(arr[0])         #1.0
 print(arr[3])         #4.0
+
+arr1=ModArr.array('f',[1.5,2.5,3.5,4.5])
+print(arr1, type(arr1)) 
+print(arr1[2])       #3.5
+print(arr1[3])       #4.5
+print(arr1[-3])      #2.5
+#(4)----------------------------->
+arr=ModArr.array('d',[1,2,3,4,5]) 
+for i in arr:
+    print(i,end=' , ')
+    print(i,end=' , ')
+
+for i in range (len(arr)):
+    print(i,"-->",arr[i])
+
+for loc,val in enumerate(arr):
+    print(f"Index:-{loc}:,value:-{val}")
+    print(f"{loc},value:-{val}")
+
+print(arr[2:7])   #slicing array from index 2 to 6
+print(arr[2:])    #slicing array from start to index 3
+print(arr[:5])    #slicing array from start to index 4
+print(arr[:])     #slicing the entire array
+    
