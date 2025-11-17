@@ -66,4 +66,41 @@ print(arr[2:7])   #slicing array from index 2 to 6
 print(arr[2:])    #slicing array from start to index 3
 print(arr[:5])    #slicing array from start to index 4
 print(arr[:])     #slicing the entire array
-    
+
+#------------------------------------------Modifying Array elements------------------------------------
+#(1)Adding elements:->
+arr=ModArr.array('d',[1,2,3,4,5])  #Array of integer
+arr.append(110)     #Appending elements at the end
+print(arr)   #array('d', [1.0, 2.0, 3.0, 4.0, 5.0, 110.0])
+
+arr.extend([120,130,140])   #Extending array with Multiple elements
+print(arr)   #array('d', [1.0, 2.0, 3.0, 4.0, 5.0, 110.0, 120.0, 130.0, 140.0])
+
+arr.insert(2,225)   #Inserting element at index 2 
+print(arr)   #array('d', [1.0, 2.0, 225.0, 3.0, 4.0, 5.0, 110.0, 120.0, 130.0, 140.0])
+
+arr.insert(-2,9999)
+print(arr)   #array('d', [1.0, 2.0, 225.0, 3.0, 4.0, 5.0, 110.0, 120.0, 9999.0, 130.0, 140.0])
+
+#(2)Replacing elements
+arr=ModArr.array('d',[1,2,3,4,5])  #Array of integer
+#arr.remove(50)   #Remove First occurrence of element with value 50
+#print(arr)
+
+arr.remove(4)  #Removing element at index 4
+print(arr)   #array('d', [1.0, 2.0, 3.0, 5.0])
+
+arr.pop()      #Removing last element
+print(arr)   #array('d', [1.0, 2.0, 3.0])
+
+del arr[2]     #Deleting element at index 2
+print(arr)   #array('d', [1.0, 2.0])
+
+#del arr()      #Deleting the entire Array   
+#print(arr)   #This will raise a name error since arr is deleted
+
+i=0
+
+while i < len(arr):
+        print(arr[i])
+        i+=1
