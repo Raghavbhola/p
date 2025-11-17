@@ -104,3 +104,70 @@ i=0
 while i < len(arr):
         print(arr[i])
         i+=1
+
+#(3)---------------------->
+import array as ModArr
+import copy as cp
+arr=ModArr.array('i',[10,20,30,40,50,50,60,70,80,90,100])
+ac=arr
+print("Original array:",arr)  #Original array: array('i', [10, 20, 30, 40, 50, 50, 60, 70, 80, 90, 100])
+print("Copied array:",ac)     #Copied array: array('i', [10, 20, 30, 40, 50, 50, 60, 70, 80, 90, 100])
+print(id(arr),id(ac))
+
+ac[5]=999
+print(arr)  #array('i', [10, 20, 30, 40, 50, 999, 60, 70, 80, 90, 100])
+print(ac)   #array('i', [10, 20, 30, 40, 50, 999, 60, 70, 80, 90, 100])
+#(4)-------------------------->
+import array as ModArr
+import copy as cp
+arr=ModArr.array('i',[10,20,30,40,50,60,70,80,90,100])
+ac= cp.deepcopy(arr)
+print("Original array:",arr)
+print("Copied array:",ac)
+print(id(arr),id(ac))
+ac[-5]=999
+print("After modification:-")
+print("Original array:",arr)
+print("Copied array:",ac)      #Copied array: array('i', [10, 20, 30, 40, 50, 999, 70, 80, 90, 100]) 
+
+Arrlist= arr.tolist()
+Arrlist.sort()
+S_arr= ModArr.array('i',Arrlist)
+sorted_list=sorted(arr)
+print("original array:", arr, type(arr))
+print("sorted array:", arr,S_arr,type,(S_arr))
+
+a=cp.copy(arr)
+a[0]=200
+#a.sort()
+print(id(a),id(arr))
+
+#--------------------------------------Reversing Array-----------------------------------------------------------------
+#(1)Slicing:->
+import array as ModArr
+import copy as cp
+arr=ModArr.array('i',[10,20,30,40,50,60,70,80,90,100])
+rev_arr= arr[: :-1]
+print("Reversed array using slicing:",rev_arr)  #Reversed array using slicing: array('i', [100, 90, 80, 70, 60, 50, 40, 30, 20, 10])
+print("original array remains unchanged:",arr)
+
+#(2)Using reverse() method:->
+arr_list=arr.tolist()
+arr_list.reverse()
+ra=ModArr.array('i',arr_list)
+print("Reversed array using reverse() method:",ra)
+print("Original array after reverse() method:",arr)
+
+#(3)Using a loop:->
+#Array
+import array as ModArr
+import copy as cp
+arr=ModArr.array('i',[10,20,30,40,50,60,70,80,90,100])
+rev_arr=ModArr.array('i',[])
+for i in range(len(arr) -1,-1,-1):
+    rev_arr.append(arr[i])
+    print("Appending:",arr[i])
+
+print("Reversed array using slicing:",rev_arr)  
+print("original array remains unchanged:",arr)
+
