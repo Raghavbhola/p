@@ -38,7 +38,7 @@ a, b, c, d = 10, 20, 30, 40
 arr2 = ModArr.array('i', [a, b, c, d])
 print(arr2, type(arr2))             #array('i', [10, 20, 30, 40]) <class 'array.array'>
 
-#(3)----------------------------------Accessing array elements----------------------------------------------
+#(3)------------------------------------------Accessing array elements--------------------------------------------------------------
 arr=ModArr.array('d',[1,2,3,4,5])  #Array of integer
 print(arr, type(arr)) 
 print(arr[0])         #1.0
@@ -67,7 +67,7 @@ print(arr[2:])    #slicing array from start to index 3
 print(arr[:5])    #slicing array from start to index 4
 print(arr[:])     #slicing the entire array
 
-#------------------------------------------Modifying Array elements------------------------------------
+#-----------------------------------------------Modifying Array elements--------------------------------------------------
 #(1)Adding elements:->
 arr=ModArr.array('d',[1,2,3,4,5])  #Array of integer
 arr.append(110)     #Appending elements at the end
@@ -142,7 +142,7 @@ a[0]=200
 #a.sort()
 print(id(a),id(arr))
 
-#--------------------------------------Reversing Array-----------------------------------------------------------------
+#---------------------------------------------------Reversing Array-----------------------------------------------------------------
 #(1)Slicing:->
 import array as ModArr
 import copy as cp
@@ -170,4 +170,83 @@ for i in range(len(arr) -1,-1,-1):
 
 print("Reversed array using slicing:",rev_arr)  
 print("original array remains unchanged:",arr)
+
+#-----------------------------------------------Joining Arrays-------------------------------------------------------------
+#(1) Using + operator
+import array as ModArr
+import copy as cp
+arr=ModArr.array('i',[10,20,30,40,50,60,70,80,90,100])
+arr3=ModArr.array('i',[200,300,400,500,600])
+arr4=arr+arr3   
+print("Joined array using +operators:",arr4)
+
+#(2)Using append() in a loop:->
+for i in arr3:
+    arr.append(i)
+
+print("Joining array using append() in a loop",arr) 
+
+#(3)Using extend() method:-> easy way
+arr.extend(arr3)
+print("Joined array using extend() method:",arr)
+
+#(1)----------------------->
+import array as ModArr
+arr=ModArr.array('i',[140,23,42,12,42,5,16,71,66,53])
+a=arr.buffer_info()
+print(a[0],[1])   #prints:address of the array and number of elements in the arrays.
+
+#(2)----------------------->
+import array as ModArr
+arr=ModArr.array('i',[140,23,42,12,42,5,16,71,66,53])
+arr1=ModArr.array('f',[1.2,2.5,3.5,4.5,7.4])
+#(1)bufer_info() method:-
+a=arr.buffer_info()
+b=arr1.buffer_info()
+print(a[0],[1])
+print(b[0],[1])
+#(2)count() method:-
+print(arr.count(16))  #Counts this occurrences of 16 in the array.
+print(arr.count(400))
+#(3)index() method:-
+x=arr.index(71)  #find the index of first occurrence of 71
+print(x)   #7
+arr.reverse()
+print(arr)
+#----------------------------------Array se list banani hai-----------------------------------------------
+import array as ModArr
+arr=ModArr.array('i',[140,23,42,12,42,5,16,71,66,53])
+list1=[1,2,3,4,5,6]
+arr.fromlist (list1)
+print(arr)      #array('i', [140, 23, 42, 12, 42, 5, 16, 71, 66, 53, 1, 2, 3, 4, 5, 6])
+
+
+#----------------------------------------------------------------------------------------------------------------------------
+#***DATETIME:-->Python doesn't allow internally
+import datetime
+n=datetime.datetime.now()
+print("Current date and time:",n)
+print("Current year:",n.year)         #current year
+print("Current month:",n.month)       #current month
+print("Current day:",n.day)           #current day
+print("Current hour:",n.hour)         #current hour
+print("Current minute:",n.minute)     #current minute
+print("Current second:",n.second)     #current second
+
+#**strf:->that's function.
+print(n.strftime("%D"))                      #D->Date
+print(n.strftime("%d"))                      #d->day in numbers
+print(n.strftime("%Y-%m-%d  %H:%M:%S"))      #Y:-year,m:-month,d:-date, H:-hour in 24,M:-Min., S:-sec.
+print(n.strftime("%W"))                      #W:-Which Saturday of the year is it?
+print(n.strftime("%I:%M:%p"))                #I:- 12 hr. format ,p:-PM/AM
+print(n.strftime("%B, %d, %Y"))              #B:-Nov
+print(n.strftime("%A,%B,%Y"))                #A:-Week day
+print(n.strftime("%X"))                    #X:-Time in 24 hr. format
+
+X=datetime.datetime(2005,7,8)
+print(X.strftime("%A,%B,%d,%Y"))    #Friday,July,08,2005
+print(X.strftime("%H:%M:%S"))
+
+s=datetime.datetime(2012,8,9)
+print(s.strftime("%A,%B,%d,%Y"))    #Thursday,August,09,2012
 
