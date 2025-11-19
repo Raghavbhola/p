@@ -38,7 +38,7 @@ a, b, c, d = 10, 20, 30, 40
 arr2 = ModArr.array('i', [a, b, c, d])
 print(arr2, type(arr2))             #array('i', [10, 20, 30, 40]) <class 'array.array'>
 
-#(3)------------------------------------------Accessing array elements--------------------------------------------------------------
+#(3)------------------------------------------{Accessing array elements}--------------------------------------------------------------
 arr=ModArr.array('d',[1,2,3,4,5])  #Array of integer
 print(arr, type(arr)) 
 print(arr[0])         #1.0
@@ -67,7 +67,7 @@ print(arr[2:])    #slicing array from start to index 3
 print(arr[:5])    #slicing array from start to index 4
 print(arr[:])     #slicing the entire array
 
-#-----------------------------------------------Modifying Array elements--------------------------------------------------
+#-----------------------------------------------{Modifying Array elements}--------------------------------------------------
 #(1)Adding elements:->
 arr=ModArr.array('d',[1,2,3,4,5])  #Array of integer
 arr.append(110)     #Appending elements at the end
@@ -142,7 +142,7 @@ a[0]=200
 #a.sort()
 print(id(a),id(arr))
 
-#---------------------------------------------------Reversing Array-----------------------------------------------------------------
+#---------------------------------------------------(Reversing Array)-----------------------------------------------------------------
 #(1)Slicing:->
 import array as ModArr
 import copy as cp
@@ -171,7 +171,7 @@ for i in range(len(arr) -1,-1,-1):
 print("Reversed array using slicing:",rev_arr)  
 print("original array remains unchanged:",arr)
 
-#-----------------------------------------------Joining Arrays-------------------------------------------------------------
+#-----------------------------------------------(Joining Arrays)-------------------------------------------------------------
 #(1) Using + operator
 import array as ModArr
 import copy as cp
@@ -213,7 +213,7 @@ x=arr.index(71)  #find the index of first occurrence of 71
 print(x)   #7
 arr.reverse()
 print(arr)
-#----------------------------------Array se list banani hai-----------------------------------------------
+#----------------------------------{Array se list banani hai}-----------------------------------------------
 import array as ModArr
 arr=ModArr.array('i',[140,23,42,12,42,5,16,71,66,53])
 list1=[1,2,3,4,5,6]
@@ -250,3 +250,13 @@ print(X.strftime("%H:%M:%S"))
 s=datetime.datetime(2012,8,9)
 print(s.strftime("%A,%B,%d,%Y"))    #Thursday,August,09,2012
 
+S=datetime.datetime(1978,12,20)
+print(S.strftime("%A,%B,%d,%Y"))
+
+print(n.strftime("%C"))             #Century (year divided by 100, truncated to an integer)
+print(n.strftime("%c"))             #Day of the year
+print(n.strftime("%x"))             #date
+print(n.strftime("%X"))             #time
+print(n.strftime("%V"))             #ISO week number of the year.
+print(n.strftime("%f"))             #Microsecond as a zero-padded decimal
+print(n.strftime("%Z"))             #Time zone name
