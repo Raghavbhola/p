@@ -69,4 +69,29 @@ x=re.findall("/$",pg)
 x=re.findall("/s",pg)
 x=re.findall("\S",pg)
 x=re.findall("...ror",pg)
+x=re.findall("^ror",pg)      #(We'll catch up later)
+x=re.findall("Gl.b..",pg)      #['Global', 'Globe ']
+x=re.findall("planet$",pg)   #we'all catch up later
+x=re.findall("hel.o*",pg)      #zero or more occurrences of preceding element
+x=re.findall("hel.o+",pg)      #one or more occurrences of preceding element
+x=re.findall("hel.o{5}",pg)    #exactly (5) occurrences of preceding element
+x=re.findall("hel.o{0,5}",pg)  #between 0 and 5 occurrences of preceding element
+print(x)
+
+#-----(Set of sequences)------------>
+x=re.findall("[au]",pg)   #find all vowels
+print(x)
+print(x.count('a'))  
+print(x.count('u'))
+print(x.count('i'))
+print(x.count('e'))
+print(x.count('o'))                                           #NOTE:  ^:->Gap, bs:->print full word
+x=re.findall("[A-Z]",pg)  #find all alphabets
+x=re.findall("[s-z]",pg)
+x=re.findall("[^a-z,^,0-9,^,^-]",pg) #negation-find all except small alphabets
+x=re.findall("[0-9]",pg)  #find all alphanumeric characters
+x=re.sub("\s","7",pg,5)   #substitute function
+x=re.sub("\s","7",pg)
+x=re.search("ra",pg)  #will search
+
 print(x)
