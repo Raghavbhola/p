@@ -67,3 +67,6 @@ pg="Global warming is the hello F long-term1   increase 66 by Gloy hellooo error
 x=re.findall("[a-d]",pg)
 x=re.findall("/$",pg)
 x=re.findall("/s",pg)
+x=re.findall("\S",pg)
+x=re.findall("...ror",pg)
+print(x)
