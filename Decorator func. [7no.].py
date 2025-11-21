@@ -1,7 +1,7 @@
 # Decorators:-decorators are a way to enhance functions or methods without changing their actual code.
 #  Eg:-> use @ to know i.e. Decorator.
 #(1)---------------------->
-'''def change_case(arg):
+def change_case(arg):
     def inner_func():
         return arg().upper()
     return inner_func
@@ -37,7 +37,7 @@ def my_uppercase1():
 
 print(my_lowername())
 print(my_uppercase())
-print(my_uppercase1())'''
+print(my_uppercase1())
 #(2)------------------------------------->
 def greet_decorator(arg):
     def inner_fun1():
@@ -63,3 +63,34 @@ def your_greeting():
 
 print(my_greeting())       #Hello! WE ARE INDIAN, SHUBHAM TIWARI HERE, Have a nice day.
 print(your_greeting())     #Hello! We are Indian, Shubham Tiwari Here, Have a nice day.
+
+#(3) Decorator with arguments:---------------------------->
+def changecase(n):
+    def change_Uppercase(arg):
+        def inner_func():
+            if n==1:
+                return arg().upper(),n
+            elif n==2:
+                return arg().upper(),n
+            else:
+                return arg()
+        return change_Uppercase
+    
+@changecase()
+def my_name():
+    return " Hello karan, how are you? "
+
+print(my_name())
+
+#(4)--------------->
+def changecase(func):
+    def my_inner(name):
+        return func(name.upper())
+    return my_inner
+
+@changecase
+def my_function(abc,xyz,pqr):
+    return f"Hello,{abc},{xyz},and {pqr}! How are you? doing today"
+
+print(my_function("Raghav","Shubham","Anjali"))
+print(my_function("Shubham"))
