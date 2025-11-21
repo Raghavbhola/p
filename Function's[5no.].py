@@ -47,14 +47,14 @@ printInfo(name="Raghav",age=30)
 printInfo("Shubham",28)
 printInfo("Aman",32)
 '''OUTPUT
-Name: kunal
-Age: 25
-Name: Raghav
-Age: 30
-Name: Shubham
-Age: 28
-Name: Aman
-Age: 32'''
+ Name: kunal
+ Age: 25
+ Name: Raghav
+ Age: 30
+ Name: Shubham
+ Age: 28
+ Name: Aman
+ Age: 32'''
 
 #(2)--------------------------------------------------------------------->
 def add():
@@ -361,7 +361,7 @@ def myfunction():
 
 myfunction()
 print(marks)    #70
-
+#---------------------------------------------------------------------------------------------------
 #Name error:->IF variable is defined inside a function and trying to access the function.
 def my_function(a:int,b:int):
     print(type(a),type(b))
@@ -373,6 +373,7 @@ print(my_function("hello"," world "))           #hello world
 print(my_function("Hello"," My sweetheart "))   #Hello My sweetheart 
 print(my_function(50,50))                       #100
 print(my_function(100000,999009))               #1099009
+
 #-------------------------------------ANNOTATION--------------------------------------------------------------------
 #**Annotation are ignored at run time. They mostly used while executing [IDE] & Static type checker libraries.
 
