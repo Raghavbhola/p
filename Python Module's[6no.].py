@@ -1,9 +1,10 @@
 #Python Modules:-A file containing python code, Eg.-Function and variable, that can be ignored and used in other python program.
+
 #(1)----------------------------->
-#import math
-#print(math.sqrt(16))
-#print(math.pi)
-#print(math.sqrt(25))
+import math
+print(math.sqrt(16))
+print(math.pi)
+print(math.sqrt(25))
 #(2)----------------------------------**Print krvane ke liye alag se new file bananni hoegi:-mymodule.py--------------------- 
 import mymodule
  
@@ -72,6 +73,7 @@ import random
 print(dir(random))
 random.randint(1,10000)
 print(random.random())
+
 #(2)--------------------->
 import math
 print(math.sqrt(16))   #4.0
