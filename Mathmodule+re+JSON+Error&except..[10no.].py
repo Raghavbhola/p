@@ -175,3 +175,27 @@ try:
     print(a)
 except:
     print("An error occured")    
+
+#(2)--------------------->
+try :
+    print(545/90)
+except NameError:
+    print("A NameError exception occurred.")
+except:
+    print("An error occurred.")
+else:
+    print("No Error occurred")           
+
+#(3)-------------------------->
+try:
+    print("Akash is  a good boy")
+except NameError:
+    print("A NameError exception occurred")
+except ZeroDivisionError:
+    print("A ZeroDivisionError exception occurred")
+except:
+    print("An unxcepted error occurred.")
+else:
+    print("No Error occurred.")            
+
+#(4)--------------------------->
