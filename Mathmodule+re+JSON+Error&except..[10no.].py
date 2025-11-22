@@ -85,7 +85,7 @@ print(x.count('a'))
 print(x.count('u'))
 print(x.count('i'))
 print(x.count('e'))
-print(x.count('o'))                                           #NOTE:  ^:->Gap, bs:->print full word
+print(x.count('o'))                                                                 #NOTE:  ^:->Gap, bs:->print full word
 x=re.findall("[A-Z]",pg)  #find all alphabets
 x=re.findall("[s-z]",pg)
 x=re.findall("[^a-z,^,0-9,^,^-]",pg) #negation-find all except small alphabets
@@ -95,3 +95,83 @@ x=re.sub("\s","7",pg)
 x=re.search("ra",pg)  #will search
 
 print(x)
+
+st="Aakash Anand Ajay Bhanu Akash Amit Arjun" #by Raghav
+x=re.search(r"\bB\w+",st)    #\b :- will search
+
+print(x)
+print(x.span())  #obj m se value ko access krwana   *Match object
+print(x.group())
+print(x.string)
+#print(x(1)-x(0))
+
+txt="The rain in spain mainly in the plain be the sain claim"
+x=re.findall("[a-c]",txt)
+print(x)
+
+#---------------------------------------------------------------------------------------------------
+#*JSON:-JavaScript Object Notation, used for data interchange
+#          (Data storage and exchange)
+
+#(2)------------------------------>
+import json
+x={
+    "id":"unique-identifier",
+    "firstname":"John",
+    "dateofBirth":"1990-01-15",
+    "email":"John.doe@example.com",
+    "phone":"+1-2222-3455",
+    "address":{
+        "street":"123 Main st",
+        "city":"springfield",
+        "zipcode":"62701",
+        "country":"USA"
+        },
+        "gender":"male",
+        "nationality":"American"
+}
+y=json.dumps(x) #converts Python dictionary to json string
+print(type(y))
+print("-----------------------------------------")
+print(json.dumps({"name":"John","age":30}))
+print("-----------------------------------------")
+print(json.dumps(["apple","bananas"]))
+print("-----------------------------------------")
+print(json.dumps(42))
+print("-----------------------------------------")
+print(json.dumps(31.76))
+print("-----------------------------------------")
+print(json.dumps(True))
+print("-----------------------------------------")
+print(json.dumps(False))
+print("-----------------------------------------")
+print(json.dumps(None))
+print("-----------------------------------------")
+
+#(3)------------------------------------------->
+y=json.dumps(x,indent=4,separators=(" , ","="))   #Pretty print Json with custom seprators
+print(y)
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------
+#Error & Exceptions:-> error->Compile-time problem/issue
+#                      exception->run-time problem/issue
+#Exception handling:->It is managing runtime error during execution of program/code
+#execution raised when error or unexcepted situation arise during the programming execution
+
+#EVENT:-during runtime/execution of program which disrupts the normal flow of program.
+#exception:-python script has raised the exception. it must either handle the exception immediately otherwise it terminates & quit.
+
+#Handling an exception:->
+#(1)Try,catch
+#(2)Try,catch,throw,final
+#(3)except:-Jo bhi line of code will get execute
+
+#(4)else:-It will get executed when try-block executes without failure.
+#(5)Finally:-It will get execute for sure
+#(6)raise:-It use to raise an exception
+
+#(1)--------------------->
+try:
+    print(a)
+except:
+    print("An error occured")    
