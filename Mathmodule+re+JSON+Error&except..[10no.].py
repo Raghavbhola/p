@@ -199,3 +199,36 @@ else:
     print("No Error occurred.")            
 
 #(4)--------------------------->
+try:
+    num=int(input("Enter a number"))
+    result=10/num
+    print(f"Result is {result}")
+except NameError:
+    print("Invalid input! Please enter a valid integar")
+except ZeroDivisionError:
+    print("Error! Division by zero is not allowed.")
+except:
+    print("An unxcepted error occurred.")
+else:
+    for i in range (11):
+        print(f"{result} * {i}={result*i}")
+        #print("No Error occurred")        
+
+#NOTE- Finally:->Whether the work is done or not, you leave anyway
+#(5)------------------------------->
+try:
+    num=int(input("Enter a number"))
+    result=1/num
+    print(f"Result is {result}")
+except ValueError:
+    print("Invalid input! Please enter a valid integar")
+except ZeroDivisionError:
+    print("Error! Division by zero is not allowed.")
+except:
+    print("An unxcepted error occurred.")
+else:
+    for i in range (10):
+        print(f"{result} x {i}={result*i}")
+        #print("No Error occurred")   
+finally:
+    print("Execution completed")
