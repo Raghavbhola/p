@@ -258,4 +258,23 @@ try:
     risky_function()
 except KunalException:
     print(f"Caught a custom exception: {KunalException}")    
-    
+
+#(8)------------------------------->
+class KunalException(Exception):
+    pass
+def risky_function():
+    raise KunalException("Something went wrong in risky_function")
+print("risky_function executed successfully")
+
+try:
+    risky_function()
+except KunalException as e:
+    print(f"caught a custom exception:{e}")    
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+#Exception chaining:-> is a technique where one exception is caught and a new exception is thrown with the original exception attached as the cause.
+try:
+    open("Non_exixtent_file.txt","r")
+except OSError:
+    raise RuntimeError("A runtime error occurred due to an OS error")
+#print("FileNotFoundError exception occurred")
