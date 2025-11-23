@@ -232,3 +232,30 @@ else:
         #print("No Error occurred")   
 finally:
     print("Execution completed")
+
+#(6)----------------------------->
+#raise exception("This is a custom exception")
+def divide (a,b):
+    if b==0:
+        raise Exception("Karan Defined Error: Division by zero is not allowed")
+    return a/b
+
+try:
+    result=divide(10,2)
+    print("Result:",result)
+except:
+    print("An error occurred.")
+#except Exception as e:
+#    print("An error occured.",e)    
+
+#(7)----------------------------->
+class KunalException(Exception):
+    pass
+def risky_function():
+    raise KunalException("Something went wrong in risky_function")
+
+try:
+    risky_function()
+except KunalException:
+    print(f"Caught a custom exception: {KunalException}")    
+    
