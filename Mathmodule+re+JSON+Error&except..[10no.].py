@@ -278,3 +278,15 @@ try:
 except OSError:
     raise RuntimeError("A runtime error occurred due to an OS error")
 #print("FileNotFoundError exception occurred")
+
+#File handling:- Python program ke through kisi file ko read,writr,update ya delete karna.
+
+#Logging in python:->Logging is a code mechanisum, to record a message, during the excusion of the programming langauge transection on the run time, is known as Logging in python.
+#Use only 3 karan:->
+#            (1)we are able to debugging
+#            (2)oditing
+#            (3)Monitering
+
+#NOTE-log-level: Info,Debug,Error,Warning,Critical
+#Components of logging:->logger,handler, formatter, logger level, filter.
+
