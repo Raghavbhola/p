@@ -20,7 +20,7 @@ for i in s1:
 
 s= "Beautiful is better than ugly, Explicit is better than implicit,Simple is better than completed,Flat is beeter than nested,sparse is better than dence,Readability counts"
 for i in s:
-    if i not in "aeiouAEIOU":  #if it returns true,it will print consonats
+    if i not in "aeiouAEIOU":   #if it returns true,it will print consonats
         print(i,end="")
 
 sum_tuple=(5,26,32,44,58,43,78,90,11,23)   #tuple
@@ -35,19 +35,22 @@ for i in li:                        #loop for List
     if i%2==0:
         print(i,"is even")
     else:
-        print(i,"is odd")        
-#(1)
+        print(i,"is odd") 
+               
+#(1)--------------->
 for i in range(10,20):        #Range
     print(i)
 
 for i in range(30,40):        #Range
     print(i)  
-#(2)
+
+#(2)-------------->
 for i in range(0,2,-1):       #Range
     print("Hello")
     
 print("program ends here") 
-#(3)
+
+#(3)-------------->
 for i in range(10):  #single argument-stop,start-0,step-1
       print(i)  
 for i in range(1,10,2):
@@ -55,18 +58,21 @@ for i in range(1,10,2):
 for i in range(11,21,15):
       print(i)        
 
-#(1)
+#(1)------------->
 numbers={10:"ten",20:"twenty",30:"thirty",40:"forty",50:"fifty"}   #Dictionary
 for i in numbers:
     print(i,numbers[i],sep="->")
-#(2)    
+
+#(2)------------->    
 numbers={10:"ten",20:"twenty",30:"thirty",40:"forty",50:"fifty"}
 a=(numbers.keys())          #list of keys
 print(a)
-#(3)
+
+#(3)------------->
 for i in numbers.items():    #list of key-value pairs
-    print(i)      
-#(4)
+    print(i)
+
+#(4)------------->
 a=numbers.get(10)          #accessing value using keys
 for i in numbers:
     print(i,numbers[i],sep="->")         
@@ -80,7 +86,7 @@ else:
     print("Program ends here/End of for-else loop")
 
 #For else loop:->For else execution ke baad else block execute hoga.
-#(1)
+#(1)--------->
 i=int(input("enter a number to check prime or not= "))
 z=int(i**0.5)
 for y in range(2,z+1):
@@ -91,8 +97,9 @@ for y in range(2,z+1):
         is_prime=True
         print(i,"is prime number")
     else:
-        print(i,"is not a prime number")    
-#(2)
+        print(i,"is not a prime number") 
+
+#(2)---------->
 li=[5,26,32,44,58,43,78,90,11,23]
 for i in li:
     print(i)
@@ -101,7 +108,8 @@ else:
     print("This is else block")
 
 print("Program ends here")
-#(3)
+
+#(3)---------->
 num=int(input("enter a number to write table"))
 for i in range(1,11):
     print(f"{num}*{i}={num*i}")
@@ -112,27 +120,29 @@ else:
 
 
         
- #While Loop:->It is used to repeat a block of code as long as a condition is true permanently, the loop will run indefinitely.
-#While expression:Loop condition-by default it is ture
+# While Loop:->It is used to repeat a block of code as long as a condition is true permanently, the loop will run indefinitely.
+# While expression:Loop condition-by default it is ture
 #statement(s)-block of code.
 #code to be executed.
-#(1)
+#(1)------------>
 count=0
 print(id(count))
 while count<5:
     print("count is:",count)
     count+=1
     print("loop ended")
-#(2)
+
+#(2)------------->
 while True:
     print("hello")
     count=1
 while count<=8:
-     print("hello")
-     count=count+1
+    print("hello")
+    count=count+1
 
 print(count)
-#(3)
+
+#(3)----------------------->
 #print numbers from 1 to 5
 i=1
 while i <=5:
@@ -140,17 +150,18 @@ while i <=5:
     i +=1
 
 print("Loop ended")      
-#(4)
-n=input("enter a number:")
-while n.isnumeric()==True:
-    print("You entered a valid number;")
-    n=input("enter a number")
+#(4)---------------------->
+
+#n=input("enter a number:")
+#while n.isnumeric()==True:
+#    print("You entered a valid number;")
+#    n=input("enter a number")
     #INFINITE LOOP chalega jab hum n=input(:enter a number") print k baad vala nhi likhe ge.
 
 
 
 #While-else Loop:->same as for-else loop
-#(1)
+#(1)------------------->
 count=9
 while count<5:     #Loop condition-ture entered into the loop.
     print("count is:",count)
@@ -159,12 +170,14 @@ else:
     print("Loop ended as the condition became false")
 
 print("outside the loop|program ended")
-#(2)    
-flag=False
-while (flag):          #while True -infinite loop run hoga
-    print("Given flag is false")
-    print("b-bye")
-#(3)
+
+#(2)----------------->
+#flag=False
+#while (flag):          #while True -infinite loop run hoga
+#    print("Given flag is false")
+#    print("b-bye")
+
+#(3)------------------------------------>
 user_name=input("enter your username:")
 existing_user=["Navya0","Shubham1","Kunal3","Yash3","Rohit","sagar5","Rajat6","Ankit7"]
 for checking_user in existing_user:
@@ -173,10 +186,29 @@ for checking_user in existing_user:
         break
     else:
         print("Username is available|You can proceed with the registration")
-#(4)
+
+#(4)------------------------------------->
 li=[45,23,67,32,89,90,12,49,12,49,78,56]
 for item in li:
     if item == 90:
       break
     print("Item is:",item)
 print("Loop ended")        
+
+#break:-jese hi condition match/ True hui it will immediately exit from the condition
+#(1)-------------------->
+for i in range (1,11):
+    if i==7:
+        break
+    print(i)
+
+print("Loop ended")    
+
+#(2)------------------>
+var =10
+while var>0:
+    print("var is:",var)
+    var-=1 
+    if var==5:
+       break 
+print("Loop ended")
