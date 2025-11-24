@@ -290,3 +290,36 @@ except OSError:
 #NOTE-log-level: Info,Debug,Error,Warning,Critical
 #Components of logging:->logger,handler, formatter, logger level, filter.
 
+#(1)-------------------->
+import logging
+logging.basicConfig(level=logging.DEBUG,format='%(asctime)s-%(levelname)s-%(message)s')      #NOTE-(asctime)- for current time
+                                                                                            
+def total_sum(a,b):
+    logging.debug(f"Calculating the sum {a} and {b}")
+    result= a+b
+    logging.debug(f"Result of sum:{result}")
+    return result
+
+If_name_="_main_"
+x=5
+y=10
+logging.info(f"Starting sum calculation for {x} and {y}")
+sum_result=total_sum(x,y)
+logging.info(f"The total sum is :{sum_result}")
+
+#(2)------------------------>
+import logging 
+logger = logging.getLogger('my_logger')
+logger.setLevel (logging.DEBUG)
+formatter=logging.Formatter('%(asctime)s-%(levelname)s-%(message)s')
+console_handler=logging.StreamHandler()
+console_handler.setFormatter(formatter)
+logger.addHandler(console_handler)
+logger.debug("This is debug message")
+logger.info("This is info message")
+logger.warning("This is an warning message")
+logger.error("This is an error message")
+logger.critical("This is a critical message")
+logger.debug("Akash is dangerous")
+logger.critical("Akash is very dangerous")
+
