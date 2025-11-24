@@ -1,5 +1,6 @@
 #Continue statement:->it will skips the current iteration.
-#(1)
+
+#(1)------------------->
 for letter in "PythonisaAmazinglanguagewhichisveryeasytolearnusegreatlyandalsoverypowerful":
 
     if letter=="A" or letter=="a":
@@ -21,14 +22,16 @@ n-d-found on 'A' or 'a',skipping..
 l-s-o-v-e-r-y-p-o-w-e-r-f-u-l-   '''
 
 #Pass Statement:->It is used to avoid getting errors when a statement is required syntactically but you don't want to do anything.
-#(1)
+
+#(1)--------------->
 for letter in "PythonIsAmazingLanguage":
     if letter=="g":
         pass      #does nothing,avoids error.
     print(letter,end="-")
 #output
 #P-y-t-h-o-n-I-s-A-m-a-z-i-n-g-L-a-n-g-u-a-g-e-
-#(2)
+
+#(2)----------------->
 for letter in "ABCDEFGHIJKLMNOP":
     if letter == "D" or letter == "M":
         pass #does nothing, avoids error
@@ -53,4 +56,25 @@ This is pass block, doing nothing for 'D' or 'M'
 M
 N
 O
-P '''   
+P '''
+
+#(3)----------------------------->
+x=int(input("Enter a number:"))
+
+if x%2==0:
+    pass
+else:
+    print("Its a odd number")
+
+#while True:                       #*INFINITE LOOP RUN HOGA.
+#    print("hello world")
+#    pass    
+
+#pass ki jagah hum (...) bhi use kr sakte hai. Isko hum Ellipse bolte hai.
+x=int(input("enter a number:"))
+
+if x%2==0:
+    ...      #Ellipses
+else:
+    print("its a odd number")
+        
