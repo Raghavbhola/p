@@ -323,3 +323,18 @@ logger.critical("This is a critical message")
 logger.debug("Akash is dangerous")
 logger.critical("Akash is very dangerous")
 
+
+#Types of logging handle:-> They determine where and how the log-message are processed and outputted. They play an important role in directing logs,
+#                           console,files,email,database,or even remote servers.
+# (1)Filehandler
+# (2)RotatingFileHandler
+# (3)SyslogHandler
+# (4)MemoryHandler
+# (5)Http Hander
+# (6)SMTP Handler
+# (7)Stream Handler
+
+#---------------------------XXX-------------------------------XXX------------------------------------XXX---------------------------------------------- 
+#FILE operations in python:-> we can read, write and append to files using built-in functions.
+#                        *File handling is an important part of any web application.
+#                        *File handling is an important part of programming while working
