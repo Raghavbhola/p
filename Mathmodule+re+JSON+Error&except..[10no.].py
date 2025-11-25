@@ -347,3 +347,4 @@ logger.critical("Akash is very dangerous")
 # 'a':->Append mode which is used to add new data to the end of the file; that is new information is automatically amended to the end.
 # 'r+':->Special read and write mode, which is used to handle both actions when a file.
 # 'x':->create mode which is used to create the specified file, returns an error if the file exists.
+# 't' or 'b':-> Text and Binary mode which is used to specify the type of file you are working with Default is text mode.
