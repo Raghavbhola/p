@@ -336,5 +336,14 @@ logger.critical("Akash is very dangerous")
 
 #---------------------------XXX-------------------------------XXX------------------------------------XXX---------------------------------------------- 
 #FILE operations in python:-> we can read, write and append to files using built-in functions.
-#                        *File handling is an important part of any web application.
-#                        *File handling is an important part of programming while working
+#                *File handling is an important part of any web application.
+#                *File handling is an important part of programming while working.
+#                *file handling is an important part of programming while working with data like retrieving data from a file, working data to a file,
+#                 and appending data to a file.
+
+#Modes of file operations:->
+# 'r':->Read mode which is used when the file is only being read.
+# 'w':->Write mode which is used to edit and write new information to the file.
+# 'a':->Append mode which is used to add new data to the end of the file; that is new information is automatically amended to the end.
+# 'r+':->Special read and write mode, which is used to handle both actions when a file.
+# 'x':->create mode which is used to create the specified file, returns an error if the file exists.
