@@ -354,3 +354,12 @@ logger.critical("Akash is very dangerous")
 # 'r+':->Special read and write mode, which is used to handle both actions when a file.
 # 'x':->create mode which is used to create the specified file, returns an error if the file exists.
 # 't' or 'b':-> Text and Binary mode which is used to specify the type of file you are working with Default is text mode.
+
+with open("Sample.txt","r") as f: #open a file in read mode             #NOTE-Sample.txt new file banani hai 
+    print(f.read())               #Reads the contents of the file
+    print(f.readline())           #Reads the contents of the file
+    print(f.readlines())          #Reads the contents of the file
+    for x in f:
+        print(x)
+
+
