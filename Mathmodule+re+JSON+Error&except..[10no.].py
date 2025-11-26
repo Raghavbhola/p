@@ -249,11 +249,11 @@ def divide (a,b):
 try:
     result=divide(10,2)
     print("Result:",result)
+except Exception as e:
+    print("An error occured.",e)  
 except:
     print("An error occurred.")
-#except Exception as e:
-#    print("An error occured.",e)    
-
+   
 #(7)----------------------------->
 class KunalException(Exception):
     pass
