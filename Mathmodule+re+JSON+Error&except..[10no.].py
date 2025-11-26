@@ -113,6 +113,12 @@ print(x)
 #*JSON:-JavaScript Object Notation, used for data interchange
 #          (Data storage and exchange)
 
+#(1)--------------------------------->
+import json
+x='{"id":"unique-identifier","firstname":"John","dateofBirth":"1990-01-15","email":"John.doe@example.com","phone":"+1-2222-3455","address":{"street":"123 Main st","city":"springfield","zipcode":"62701","country":"USA"},"gender":"male","nationality":"American"}'
+y=json.loads(x)  #converts Json string to python dictionary
+print(y["email"])
+
 #(2)------------------------------>
 import json
 x={
@@ -278,7 +284,7 @@ try:
 except OSError:
     raise RuntimeError("A runtime error occurred due to an OS error")
 #print("FileNotFoundError exception occurred")
-
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
 #File handling:- Python program ke through kisi file ko read,writr,update ya delete karna.
 
 #Logging in python:->Logging is a code mechanisum, to record a message, during the excusion of the programming langauge transection on the run time, is known as Logging in python.
