@@ -355,11 +355,28 @@ logger.critical("Akash is very dangerous")
 # 'x':->create mode which is used to create the specified file, returns an error if the file exists.
 # 't' or 'b':-> Text and Binary mode which is used to specify the type of file you are working with Default is text mode.
 
-with open("Sample.txt","r") as f: #open a file in read mode             #NOTE-Sample.txt new file banani hai 
+with open("Sample.txt","r") as f: #open a file in read mode             #NOTE-Sample.txt file honni chaiye 
     print(f.read())               #Reads the contents of the file
     print(f.readline())           #Reads the contents of the file
     print(f.readlines())          #Reads the contents of the file
     for x in f:
         print(x)
 
+#---------------------------------------------(Writing a file or a appending to a file)---------------------------------------------------------------
+#(1)------------->
+with open("Sample.txt","w") as file:            #open a file in write mode.
+    file.write("\nThis is the new line added.") #write a new line to the file
+    file.write("\nKaran is not a good boy at all")  #write another new line to the file.
 
+with open("Sample.txt","r") as f:     #open a file in read mode
+    print(f.read())                   #Read the contents of the file   
+
+#(2)------------->
+with open("Sample.txt","a") as file:      #open a file in append mode
+    file.write("\nThis is the new line added.")  #write a new line to the file
+    file.write("\nKaran is not a good boy at all")  #write another new line to the file.
+
+with open("Sample.txt","r") as f:     #open a file in read mode
+    print(f.read())               #Read the contents of the file
+
+#    
