@@ -366,7 +366,7 @@ with open("Sample.txt","r") as f: #open a file in read mode             #NOTE-Sa
 #(1)------------->
 with open("Sample.txt","w") as file:            #open a file in write mode.
     file.write("\nThis is the new line added.") #write a new line to the file
-    file.write("\nKaran is not a good boy at all")  #write another new line to the file.
+    file.write("\nKaran is not a bad boy at all")  #write another new line to the file.
 
 with open("Sample.txt","r") as f:     #open a file in read mode
     print(f.read())                   #Read the contents of the file   
@@ -374,9 +374,25 @@ with open("Sample.txt","r") as f:     #open a file in read mode
 #(2)------------->
 with open("Sample.txt","a") as file:      #open a file in append mode
     file.write("\nThis is the new line added.")  #write a new line to the file
-    file.write("\nKaran is not a good boy at all")  #write another new line to the file.
+    file.write("\nKaran is not a bad boy at all")  #write another new line to the file.
 
 with open("Sample.txt","r") as f:     #open a file in read mode
     print(f.read())               #Read the contents of the file
 
-#    
+#------------------------------(reading or appending a file if it doesn't exist)---------------------------------------------------------------------
+#(1)-------------->
+with open("Sample.txt","w") as file:   #open a file in write mode
+    file.write("\nThis is the new line added")  #write a new line to the file
+    file.write("\nKaran is not a bad boy at all")    #write another line to the file
+
+with open("Sample.txt","r") as f:   #open file in read mode
+    print(f.read())         #Read the contents of the file
+#(2)------------->
+with open("Sample.txt","a") as file:      #open a file in append mode
+    file.write("\nThis is the new line added.")  #write a new line to the file
+    file.write("\nKaran is not a bad boy at all")  #write another new line to the file.
+
+with open("Sample.txt","r") as f:     #open a file in read mode
+    print(f.read())               #Read the contents of the file
+
+
