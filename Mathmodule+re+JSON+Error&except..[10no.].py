@@ -395,4 +395,14 @@ with open("Sample.txt","a") as file:      #open a file in append mode
 with open("Sample.txt","r") as f:     #open a file in read mode
     print(f.read())               #Read the contents of the file
 
+#---------------------------(Using 'x' mode to create a file)--------------------------------------------------------
+with open("Sample3.txt","x") as file:    #open a file in create mode
+    file.write("\nThis is the new line added")
+    file.write("\nKaran is not a bad boy at all")
 
+with open("Sample.txt","a") as file:      #open a file in append mode
+    file.write("\nThis is the new line added.")  #write a new line to the file
+    file.write("\nKaran is not a bad boy at all")  #write another new line to the file.
+
+with open("Sample.txt","r") as f:     #open a file in read mode
+    print(f.read())               #Read the contents of the file    
