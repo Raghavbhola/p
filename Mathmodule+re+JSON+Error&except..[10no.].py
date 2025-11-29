@@ -406,3 +406,14 @@ with open("Sample.txt","a") as file:      #open a file in append mode
 
 with open("Sample.txt","r") as f:     #open a file in read mode
     print(f.read())               #Read the contents of the file    
+
+#-------------------------------------------------------------------------------------------------------------------
+import os
+os.remove("Sample3.txt")  #Delete the file named Sample3.txt
+
+if os.path.exists("Sample2.txt"):
+    os.remove("Sample2.txt")  #delete the file named Sample2.txt
+else:
+    print("The file does not exist")
+
+os.rmdir("myfolder")   #Delete the file named myfolder
