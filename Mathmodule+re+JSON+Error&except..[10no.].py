@@ -417,3 +417,8 @@ else:
     print("The file does not exist")
 
 os.rmdir("myfolder")   #Delete the file named myfolder
+
+
+import os
+import shutil
+os.rename("renamed_sample.txt")
