@@ -408,9 +408,11 @@ with open("Sample.txt","r") as f:     #open a file in read mode
     print(f.read())               #Read the contents of the file    
 
 #-------------------------------------------------------------------------------------------------------------------
+#(1)---------->
 import os
 os.remove("Sample3.txt")  #Delete the file named Sample3.txt
 
+#(or)
 if os.path.exists("Sample2.txt"):
     os.remove("Sample2.txt")  #delete the file named Sample2.txt
 else:
@@ -418,7 +420,7 @@ else:
 
 os.rmdir("myfolder")   #Delete the file named myfolder
 
-
+#(2)---------->
 import os
 import shutil
 os.rename("renamed_sample.txt")
