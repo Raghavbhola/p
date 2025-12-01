@@ -420,7 +420,7 @@ else:
 
 os.rmdir("myfolder")   #Delete the file named myfolder
 
-#(2)---------->
+#(2)----------->
 import os
 import shutil
 os.rename("renamed_sample.txt")
