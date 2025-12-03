@@ -16,7 +16,7 @@ if n%2 == 0:
 else:
     print(f"This is an odd number:-0")    
 
-#sum of numbers from 1 to N:->
+#sum of numbers from 1 to N:--->
 N=int(input("enter a number"))
 count=1
 sum=0
