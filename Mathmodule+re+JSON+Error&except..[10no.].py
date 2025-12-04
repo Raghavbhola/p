@@ -429,3 +429,18 @@ os.getcwd()    #Get the current working directory.
 os.chdir("c:\\eswtich \\Downloads \\HR and LC\\ Tutorials")  #change the current working directory to myfolder
 os.rmdir("my folder / myfolder")  #Delete the folder named my folder1
 shutil.rmtree("my folder")   #Delete the folder named my folder and all its contents
+
+with open("Sample2.txt","w") as file:  #open a file in write mode
+    file.write("Hello,World!")      #write a new line to the file
+    file.write("\nThis is a Sample file")  #write another new line to the file
+    file.write("\nFile handling in python is easy")  #write another new line to the file
+    file.write("\nGood Bye!")  #write another new line to the file
+    file.write("\nEnd of file")  #write another new line to the file
+    file.write("\nHave a nice day!")   #write another new line to the file
+    file.write("\nSee you soon!")  #write another new line to the file
+    file.write("\nTake care!")     #write another new line to the file
+    file.write("\nStay Safe!")     #write another new line to the file
+    file.write("\nHappy coding!")  #write another new line to the file
+
+file.flush()   #flush the internal buffer to the file
+print("Data flushed to the file Successfully")     
