@@ -423,4 +423,9 @@ os.rmdir("myfolder")   #Delete the file named myfolder
 #(2)----------->
 import os
 import shutil
-os.rename("renamed_sample.txt")
+os.rename("renamed_sample.txt")  #Rename the file named sample.1txt to rename sample.txt
+print("folder created successfully")
+os.getcwd()    #Get the current working directory.
+os.chdir("c:\\eswtich \\Downloads \\HR and LC\\ Tutorials")  #change the current working directory to myfolder
+os.rmdir("my folder / myfolder")  #Delete the folder named my folder1
+shutil.rmtree("my folder")   #Delete the folder named my folder and all its contents
