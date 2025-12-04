@@ -443,4 +443,10 @@ with open("Sample2.txt","w") as file:  #open a file in write mode
     file.write("\nHappy coding!")  #write another new line to the file
 
 file.flush()   #flush the internal buffer to the file
-print("Data flushed to the file Successfully")     
+print("Data flushed to the file Successfully") 
+
+
+with open("Sample.txt","w") as file:  #open a file in append mode
+    file.flush()
+
+print("Data flushed to the file successfully")
