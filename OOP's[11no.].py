@@ -19,4 +19,8 @@
 #(3)Encapsulation
 #(4)Inheritance
 #(5)Polymorphism
-#(6)Abstruction
+#(6)Abstruction 
+
+# _init_ :-> initialization (its parameter self hi hoga)
+#constructor:-All classes have a function called _init_(), which is always executed when the object is being initiated.
+
