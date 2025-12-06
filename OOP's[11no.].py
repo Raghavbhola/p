@@ -43,9 +43,16 @@ class Employee:
 
 #class object attribute
 e1=Employee("Alice","Developer",70000)
+e2=Employee("Bob","Designer",65000)
+e3=Employee("Charlie","Manager",80000)
+e4=Employee("Diana","Intern",30000)
+e5=Employee("Ethan","Analyst",60000)
 
 
-print(e1.salary)  #Accessing attributes of objects e1
+#print(e1.salary)  #Accessing attributes of objects e1
 
-                
+e1.display_info()
+e2.disploy_info()
+e3.disploy_info()
+Employee.display_count()                
         
