@@ -24,3 +24,28 @@
 # _init_ :-> initialization (its parameter self hi hoga)
 #constructor:-All classes have a function called _init_(), which is always executed when the object is being initiated.
 
+
+class Employee:
+    #Constructor to initialize the object
+    employee_count=0
+    def __init__(self,name,position,salary):
+        self.name=name
+        self.position=position
+        self.salary=salary
+        Employee.employee_count += 1
+
+    #Method to diploy employee details
+    def disploy_info(self):
+        print(f"Name:{self.name},Position:{self.position},salary:{self.salary}")
+
+    def display_count():
+        print(f"Total Employee:{Employee.employee_count}")
+
+#class object attribute
+e1=Employee("Alice","Developer",70000)
+
+
+print(e1.salary)  #Accessing attributes of objects e1
+
+                
+        
