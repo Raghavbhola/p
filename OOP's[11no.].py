@@ -55,4 +55,6 @@ e1.display_info()
 e2.disploy_info()
 e3.disploy_info()
 Employee.display_count()                
+
+print(type(e1))      #output:<class'_main_.Employe'
         
