@@ -24,7 +24,7 @@
 # _init_ :-> initialization (its parameter self hi hoga)
 #constructor:-All classes have a function called _init_(), which is always executed when the object is being initiated.
 
-
+#First concept of OOP:classes and objects.
 class Employee:
     #Constructor to initialize the object
     employee_count=0
@@ -57,4 +57,5 @@ e3.disploy_info()
 Employee.display_count()                
 
 print(type(e1))      #output:<class'_main_.Employe'
+
         
