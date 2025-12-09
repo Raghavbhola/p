@@ -67,3 +67,19 @@ class Employee:
         abc.name=name
         abc.position=position
         abc.salary=salary
+        abc.experience=experience
+        Employee.Employee_count +=1
+
+#Method to display employee details
+def display_info(abc):
+    print(f"Name:{abc.name},position:{abc.position},salary:${abc.salary},Age:{abc.age},city:{abc.city},experience:{abc.experience}")
+
+def display_count():
+    print(f"Total Exployee:{Employee.Employee_count}")
+#class objects attribute
+e1=Employee("Alice","Developer",70000,30,"New York",5)
+e2=Employee("Bob","Designer",65000,28,"San francise",4)
+e3=Employee("Charlie","Manager",80000,35,"Chicago",10)           
+e4=Employee("Diana","Intern",30000,22,"Boston",1)
+e5=Employee("Ethan","Analyst",60000,27,"seatle",3)
+     
