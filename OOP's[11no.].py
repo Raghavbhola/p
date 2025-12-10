@@ -83,6 +83,9 @@ e3=Employee("Charlie","Manager",80000,35,"Chicago",10)
 e4=Employee("Diana","Intern",30000,22,"Boston",1)
 e5=Employee("Ethan","Analyst",60000,27,"seatle",3)
 
-#
+# to get delete
 delattr(e3,'position')
+
+
+e1.salary =30 #Dynamically additing attribution to object e1
 
