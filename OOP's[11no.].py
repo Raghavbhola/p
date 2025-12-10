@@ -63,19 +63,22 @@ print(type(e1))      #output:<class'_main_.Employe'
 class Employee:
     #constructer to intialize the object
     Employee_count = 0
-    def _init_(abc,name,position,salary,age,city,experience):
+    def __init__(abc,name,position,salary,age,city,experience):
         abc.name=name
         abc.position=position
         abc.salary=salary
+        abc.age=age
+        abc.city=city
         abc.experience=experience
         Employee.Employee_count +=1
 
 #Method to display employee details
-def display_info(abc):
-    print(f"Name:{abc.name},position:{abc.position},salary:${abc.salary},Age:{abc.age},city:{abc.city},experience:{abc.experience}")
+    def display_info(abc):
+        print(f"Name:{abc.name},position:{abc.position},salary:${abc.salary},Age:{abc.age},city:{abc.city},experience:{abc.experience}")
 
-def display_count():
-    print(f"Total Exployee:{Employee.Employee_count}")
+    def display_count():
+        print(f"Total Exployee:{Employee.Employee_count}")
+    
 #class objects attribute
 e1=Employee("Alice","Developer",70000,30,"New York",5)
 e2=Employee("Bob","Designer",65000,28,"San francise",4)
@@ -83,9 +86,14 @@ e3=Employee("Charlie","Manager",80000,35,"Chicago",10)
 e4=Employee("Diana","Intern",30000,22,"Boston",1)
 e5=Employee("Ethan","Analyst",60000,27,"seatle",3)
 
+e1.display_info()
+e2.display_info()
+e3.display_info()
+     
+
 # to get delete
 delattr(e3,'position')
 
 
-e1.salary =30 #Dynamically additing attribution to object e1
+e1.salary =30  #Dynamically additing attribution to object e1
 
