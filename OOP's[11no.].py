@@ -82,4 +82,7 @@ e2=Employee("Bob","Designer",65000,28,"San francise",4)
 e3=Employee("Charlie","Manager",80000,35,"Chicago",10)           
 e4=Employee("Diana","Intern",30000,22,"Boston",1)
 e5=Employee("Ethan","Analyst",60000,27,"seatle",3)
-     
+
+#
+delattr(e3,'position')
+
