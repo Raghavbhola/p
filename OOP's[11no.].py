@@ -55,8 +55,8 @@ print(e1.salary)  #Accessing attributes of objects e1
 e1.display_info()
 e2.display_info()
 e3.display_info()
+e4.display_info()
 Employee.display_count()                 
-        
 
 
 #print(e1.salary)  #Accessing attributes of objects e1
