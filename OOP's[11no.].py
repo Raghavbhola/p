@@ -89,7 +89,8 @@ e5=Employee("Ethan","Analyst",60000,27,"seatle",3)
 e1.display_info()
 e2.display_info()
 e3.display_info()
-     
+e4.display_info()
+e5.display_info()     
 
 # to get delete
 delattr(e3,'position')
