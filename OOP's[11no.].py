@@ -36,11 +36,12 @@ class Employee:
         Employee.employee_count += 1
 
     #Method to diploy employee details
-    def disploy_info(self):
+    def display_info(self):
         print(f"Name:{self.name},Position:{self.position},salary:{self.salary}")
 
     def display_count():
         print(f"Total Employee:{Employee.employee_count}")
+
 
 #class object attribute
 e1=Employee("Alice","Developer",70000)
@@ -48,6 +49,14 @@ e2=Employee("Bob","Designer",65000)
 e3=Employee("Charlie","Manager",80000)
 e4=Employee("Diana","Intern",30000)
 e5=Employee("Ethan","Analyst",60000)
+
+print(e1.salary)  #Accessing attributes of objects e1
+
+e1.display_info()
+e2.display_info()
+e3.display_info()
+Employee.display_count()                 
+        
 
 
 #print(e1.salary)  #Accessing attributes of objects e1
