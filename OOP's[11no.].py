@@ -106,4 +106,11 @@ delattr(e3,'position')
 
 
 e1.salary =30  #Dynamically additing attribution to object e1
+e2.position="Design"
 
+del e1.position
+
+print(type(e1))
+print(e2)
+print(e1)
+print(type(e2))
