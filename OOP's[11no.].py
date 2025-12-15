@@ -25,7 +25,7 @@
 #constructor:-All classes have a function called _init_(), which is always executed when the object is being initiated.
 
 #First concept of OOP:classes and objects:->
-#(1)------
+#(1)----------->
 class Employee:
     #Constructor to initialize the object
     employee_count=0
