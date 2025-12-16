@@ -116,3 +116,7 @@ print(e1)
 print(type(e2))
 print(e3)
 print(e4)
+
+print(Employee.__doc__)
+print(Employee.__name__)
+print(Employee.__module__)
