@@ -120,3 +120,17 @@ print(e4)
 print(Employee.__doc__)
 print(Employee.__name__)
 print(Employee.__module__)
+print(Employee.__base__)
+print(Employee.__bases__)
+print(Employee.__dict__)
+
+Flag_check= hasattr(e1,'Salary')  #check if e1 has attribute'salary'
+print(Flag_check)  #False
+Flag_check= hasattr(e3,'position') #check if e3 has attribute'position'
+print(Flag_check)  #True
+
+setattr(e2,'salary',7000) #setattribute 'salary' of e2 to 7000
+e2.display_info()
+getattr(e3,'position')
+delattr(e4,'position')
+e5.display_count
