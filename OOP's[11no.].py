@@ -203,6 +203,9 @@ print(s2.count())     #30
 print(s1.count())     #20
 print(s2.count())     #40
 
+#print(s1._sample_hidden_variable)
+print(s1._hidden_variable)
+print(s1._hidden_variable)
 
 
 
