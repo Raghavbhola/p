@@ -186,3 +186,24 @@ e2.display_info()
 getattr(e3,'position')
 delattr(e4,'position')
 e5.display_count
+
+#---------------------------------->
+class sample:
+    _hidden_variable=0
+    def count(self):
+        self._hidden_variable +=10
+        return self._hidden_variable
+    
+s1=sample()
+s2=sample()
+print(s2.count())     #10
+print(s2.count())     #20
+print(s1.count())     #10
+print(s2.count())     #30
+print(s1.count())     #20
+print(s2.count())     #40
+
+
+
+
+
