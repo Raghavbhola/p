@@ -134,3 +134,55 @@ e2.display_info()
 getattr(e3,'position')
 delattr(e4,'position')
 e5.display_count
+
+class Employee:
+    #constructer to intialize the object
+    Employee_count = 0
+    def __init__(abc,name,position,salary,age,city,experience):
+        abc.name=name
+        abc.position=position
+        abc.salary=salary
+        abc.age=age
+        abc.city=city
+        abc.experience=experience
+        Employee.Employee_count +=1
+
+#Method to display employee details
+    def display_info(abc):
+        print(f"Name:{abc.name},position:{abc.position},salary:${abc.salary},Age:{abc.age},city:{abc.city},experience:{abc.experience}")
+
+    def display_count():
+        print(f"Total Exployee:{Employee.Employee_count}")
+    
+#class objects attribute
+e1=Employee("Alice","Developer",70000,30,"New York",5)
+e2=Employee("Bob","Designer",65000,28,"San francise",4)
+e3=Employee("Charlie","Manager",80000,35,"Chicago",10)           
+e4=Employee("Diana","Intern",30000,22,"Boston",1)
+e5=Employee("Ethan","Analyst",60000,27,"seatle",3)
+
+e1.display_info()
+e2.display_info()
+e3.display_info()
+e4.display_info()
+e5.display_info()
+
+# to get delete
+delattr(e2,'position')
+     
+e1.salary=30  #Dynamically additing attribute to object e1
+e2.position="Design"
+
+del e1.position
+
+
+Flag_check= hasattr(e1,'Salary')  #check if e1 has attribute'salary'
+print(Flag_check)  #False
+Flag_check= hasattr(e3,'position') #check if e3 has attribute'position'
+print(Flag_check)  #True
+
+setattr(e2,'salary',7000) #setattribute 'salary' of e2 to 7000
+e2.display_info()
+getattr(e3,'position')
+delattr(e4,'position')
+e5.display_count
