@@ -215,7 +215,7 @@ print(s2.count())      #100
 print(s1._hidden_variable)
 print(s1._hidden_variable)
 
-#--
+#------------------------------->
 class sample:
     _hidden_variable=0
     def count(self):
