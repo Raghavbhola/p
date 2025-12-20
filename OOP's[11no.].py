@@ -202,11 +202,16 @@ print(s1.count())     #10
 print(s2.count())     #30
 print(s1.count())     #20
 print(s2.count())     #40
+print(s1.count())      #30
+print(s2.count())      #50
+print(s2.count())      #60
+print(s2.count())      #70
+print(s2.count())      #80
+print(s2.count())      #90
+print(s2.count())      #100
+
 
 #print(s1._sample_hidden_variable)
 print(s1._hidden_variable)
 print(s1._hidden_variable)
-
-
-
 
