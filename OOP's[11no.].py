@@ -215,3 +215,22 @@ print(s2.count())      #100
 print(s1._hidden_variable)
 print(s1._hidden_variable)
 
+#--
+class sample:
+    _hidden_variable=0
+    def count(self):
+        self._hidden_variable +=1000000898780000000
+        return self._hidden_variable
+    
+s1=sample()
+s2=sample()
+print(s2.count())    #1000000898780000000
+print(s2.count())    #2000001797560000000
+print(s1.count())    #1000000898780000000
+print(s2.count())    #3000002696340000000
+print(s1.count())    #2000001797560000000
+
+   
+#print(s1._sample_hidden_variable)
+#print(s1._hidden_variable)
+#print(s1._hidden_variable)
