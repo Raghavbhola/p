@@ -234,3 +234,5 @@ print(s1.count())    #2000001797560000000
 #print(s1._sample_hidden_variable)
 #print(s1._hidden_variable)
 #print(s1._hidden_variable)
+
+#--------------------------------------------->
