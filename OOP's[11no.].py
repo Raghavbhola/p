@@ -236,3 +236,19 @@ print(s1.count())    #2000001797560000000
 #print(s1._hidden_variable)
 
 #--------------------------------------------->
+class point:
+    def __init__(self,x=0,y=0):
+        self.x=x
+        self.y=y
+
+    def display(self):
+        print(f"print({self.x},{self.y})")
+
+    def _del_(self):
+        class_name=self.__class__.__name__
+        print(f"{class_name} object is being destroyed")
+
+p1=point()
+p2=p1
+p3=p2 
+print(id(p1))       
