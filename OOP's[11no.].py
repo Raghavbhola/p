@@ -251,4 +251,4 @@ class point:
 p1=point()
 p2=p1
 p3=p2 
-print(id(p1))       
+print(id(p1)id(p2),id(p3))       
