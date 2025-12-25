@@ -262,7 +262,7 @@ del p3
 class BankAccount:
     def __init__(self, account_number, balance):
         self._account_number=account_number     #private attribute
-        self._balance= balance
+        self._balance= balance                  #private attribute
     
     def depoist(self,ammount):
         if ammount > 0:
@@ -285,6 +285,7 @@ b1= BankAccount("123456789",1000)
 b1.withdraw(200)
 b1.depoist(500)
 b1.depoist(7864)
+b1.get_balance()
 
-print(b1._account_number)
+print(b1._account_number)    #Acessing private attribute (not recommended)
 
