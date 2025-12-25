@@ -258,3 +258,29 @@ del p3
 #print(id(p1))
 
 #--------------------------------------->
+#Data hiding 
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self._account_number=account_number     #private attribute
+        self._balance= balance
+    
+    def depoist(self,ammount):
+        if ammount > 0:
+            self._balance+=ammount
+            print(f"Depoisted:${ammount}")
+        else:
+            print("Deposit amount must be positive")
+
+    def withdraw(self,ammount):
+        if 0<ammount <= self._balance:
+            self._balance-=ammount
+            print(f"withdraw:${ammount}")
+            print(f"Your account number{self._account_number} has been desited by {ammount}")
+        else:
+            print("Insufficient funds or invalid withdrawal ammount")
+
+    def get_balance(self):
+        print(f"Balance:${self._balance}")
+b1= BankAccount("123456789",1000)
+
+print(b1._account_number)
