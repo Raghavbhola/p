@@ -282,5 +282,9 @@ class BankAccount:
     def get_balance(self):
         print(f"Balance:${self._balance}")
 b1= BankAccount("123456789",1000)
+b1.withdraw(200)
+b1.depoist(500)
+b1.depoist(7864)
 
 print(b1._account_number)
+
