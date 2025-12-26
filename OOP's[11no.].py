@@ -289,3 +289,20 @@ b1.get_balance()
 
 print(b1._account_number)    #Acessing private attribute (not recommended)
 
+
+class sample:
+    _hidden_varaiable = 0
+    def count(self):
+        self._hidden_varaiable+=1
+        return self._hidden_varaiable
+    
+s1= sample()
+s2= sample()
+print(s1.count())    #output:1
+print(s2.count())    #output:1
+print(s2.count())    #output:2
+print(s1.count())    #output:2
+#print(s1._sample_hidden_variable)    #attributeError
+print(s1._hidden_varaiable)  #2
+
+
