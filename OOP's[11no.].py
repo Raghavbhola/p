@@ -306,7 +306,7 @@ print(s1.count())    #output:2
 print(s1._hidden_varaiable)  #2
 print(s2._hidden_varaiable)  #2
 
-#---------------------
+#------------------------
 class sample:
     _hidden_varaiable = 0
     def count(self):
@@ -322,5 +322,15 @@ print(s1.count())
 #print(s1._sample_hidden_variable)    #attributeError
 print(s1._hidden_varaiable)  
 print(s2._hidden_varaiable)  
+
+#----------------
+class employee:
+    name="Akash"
+    age=30
+
+e1= employee()
+e2= employee()
+print(e1.name,e2.name)  #Akash Akash
+print(e1.age,e2.age)    #30 30
 
 
