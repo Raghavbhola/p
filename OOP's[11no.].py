@@ -328,9 +328,13 @@ class employee:
     name="Akash"
     age=30
 
+class employee:
+    name="Karan"
+    age=5465    
+
 e1= employee()
 e2= employee()
-print(e1.name,e2.name)  #Akash Akash
-print(e1.age,e2.age)    #30 30
+print(e1.name,e2.name)  
+print(e1.age,e2.age)    
 
 
