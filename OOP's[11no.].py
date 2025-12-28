@@ -338,4 +338,16 @@ print(e1.name,e2.name)
 print(e1.age,e2.age)    
 
 #---------------------------------------->
+class Employee:
+    empcount=5   #class attribute
+    def __init__(self,name="Akash",age=500):  #instance attribute
+        self.name=name
+        self.age=age
+        Employee.empcount +=1
+        print("Name=",name,",Age:-", age)
+        print("Employee count is =",Employee.empcount)
+
+e1=Employee("Shubham",1090)
+e2=Employee("Karan")
+e3=Employee("System",34)
 
