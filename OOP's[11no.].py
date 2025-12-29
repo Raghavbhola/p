@@ -351,3 +351,38 @@ e1=Employee("Shubham",1090)
 e2=Employee("Karan")
 e3=Employee("System",34)
 
+
+#Methods:- Functions defined to perform a dedicated activity/operators.
+#   Methods are divided into 3 categories
+#   (1)Class Method
+#   (2)Instance Method 
+#   (3)Static Method
+
+#NOTE:-const. is a class method
+#(1)Class Method:-A python class method is a method that is bound to the class not to the instance of the class. it can be called on the class itself rather than on an instance of the class.
+#(2)Instance method:-They have access to class and instance attributes.
+#(3)Static method:-that method who have access to modify the state.
+#         *constant-never change
+
+class Employee:
+    empcount=0   #class attribute
+    def __init__(self,name="Akash",age=500):  #instance attribute
+        #self.name=name
+        self.age=age
+        Employee.empcount +=1
+       
+@classmethod
+def showCount(self):
+    print(self.empCount)
+
+@classmethod
+def newEmployee(self,name,age):
+    print(self,name,age)
+
+e1=Employee("Shubham",109)
+e2=Employee("Karan",7)
+e3=Employee("System",34)
+e1.showCount() 
+Employee.showCount(e1)
+Employee.showCount()
+
