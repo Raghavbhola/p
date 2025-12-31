@@ -367,22 +367,24 @@ e3=Employee("System",34)
 class Employee:
     empcount=0   #class attribute
     def __init__(self,name="Akash",age=500):  #instance attribute
-        #self.name=name
+        self.name=name
         self.age=age
-        Employee.empcount +=1
+        Employee.empcount += 1
        
-@classmethod
-def showCount(self):
-    print(self.empCount)
+    @classmethod
+    def showCount(self):
+        print(self.empcount)
 
-@classmethod
-def newEmployee(self,name,age):
-    print(self,name,age)
+    @classmethod
+    def newEmployee(self,name,age):
+        return(self,name,age)
 
-e1=Employee("Shubham",109)
-e2=Employee("Karan",7)
-e3=Employee("System",34)
+e1 = Employee("Shubham",109)
+e2 = Employee("Karan",7)
+e3 = Employee("System",34)
+
 e1.showCount() 
-Employee.showCount(e1)
+#Employee.showCount(e1)
 Employee.showCount()
+
 
