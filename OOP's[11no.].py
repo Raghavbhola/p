@@ -387,4 +387,29 @@ e1.showCount()
 #Employee.showCount(e1)
 Employee.showCount()
 
+#-------------------------
+class Employee:
+    empcount=0   #class attribute
+    def __init__(self,name="Akash",age=30):  #instance attribute
+        self.name=name
+        self.age=age
+        Employee.empcount += 1
+       
+    @classmethod
+    def showCount(self):
+        print(self.empcount)
+
+    @classmethod
+    def newEmployee(self,name,age):
+        print(self,name,age)
+
+e1 = Employee("Shubham", 19)
+e2 = Employee("Karan", 70)
+e3 = Employee("System", 34)
+e4 = Employee("holla", 21)
+
+e1.showCount() 
+#Employee.showCount(e1)
+Employee.showCount()
+e2.showCount()
 
