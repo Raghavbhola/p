@@ -413,3 +413,14 @@ e1.showCount()
 Employee.showCount()
 e2.showCount()
 
+#-----------------------
+class Karan :
+    money=400000  #class attribute
+
+    @classmethod
+    def showmoney(kunal):
+        return kunal.money
+
+print(Karan.showmoney())    
+
+
