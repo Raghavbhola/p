@@ -424,3 +424,8 @@ class Karan :
 print(Karan.showmoney())    
 
 
+
+#Constructors:-> Its an instance method in a class, automatically called whenever a new object of the class is created.
+#            --> its role is to assign value to the instance variable as soon as object is created. it needs a mandatory argument "self"
+#  There are two types of constructors:->(1)Default constructor
+#                                        (2)Parameterized constructor
