@@ -422,6 +422,16 @@ class Karan :
         return kunal.money
 
 print(Karan.showmoney())    
+#---------------------------
+class Karan :
+    money=1000000000000 #class attribute
+
+    @classmethod
+    def showmoney(kunal):
+        return kunal.money
+
+print(f"karan show money:-",Karan.showmoney())    #karan show money:- 1000000000000
+
 
 
 
@@ -429,3 +439,4 @@ print(Karan.showmoney())
 #            --> its role is to assign value to the instance variable as soon as object is created. it needs a mandatory argument "self"
 #  There are two types of constructors:->(1)Default constructor
 #                                        (2)Parameterized constructor
+
