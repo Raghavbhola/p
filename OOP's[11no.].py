@@ -434,9 +434,36 @@ print(f"karan show money:-",Karan.showmoney())    #karan show money:- 1000000000
 
 
 
-
 #Constructors:-> Its an instance method in a class, automatically called whenever a new object of the class is created.
 #            --> its role is to assign value to the instance variable as soon as object is created. it needs a mandatory argument "self"
 #  There are two types of constructors:->(1)Default constructor
 #                                        (2)Parameterized constructor
 
+class Employee:
+    def __init__(self):      #default constructer
+        self.name = "Bhawana"
+        self.age  = 30
+        self.salary = 50000
+
+e1 = Employee()
+e2 = Employee()
+e3 = Employee()
+
+print(e3.name)
+print(e1.age)
+print(e2.salary)
+
+#----------------------
+class Employee:
+    def __init__(self):      #default constructer
+        self.name = "yamunaa"
+        self.age  = 30
+        self.salary = 100000000
+
+e1 = Employee()
+e2 = Employee()
+e3 = Employee()
+
+print(e3.name)
+print(e1.age)
+print(e2.salary)
