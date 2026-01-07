@@ -38,3 +38,12 @@ for i in range (2,num):
    else:
       print(num,"is a prime number")
    
+#-----------------------------------------------   
+#generate a array of elements of multiple of 10 till 1000 and then remove the elements from that array which is divisible by 3 and 5
+import array as arr
+arr =arr.array('i',[10,20,30,40,50,60,70,80,90,100])
+for i in arr:
+    if i % 3 or 5== 0:
+        arr.remove(i)
+print(arr)
+
