@@ -47,3 +47,10 @@ for i in arr:
         arr.remove(i)
 print(arr)
 
+#---------------------------------------------------
+#declare a string of 15 words, then create a list in the manner that there shouldn't be any vowel
+s=" eko rakhi jaat ne pyar rakhi phona cho baade ethe fiir de vepaar lage onaa choo"
+
+for i in s:
+    if i not in "aeiou":
+        print(i,end="")
