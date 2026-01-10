@@ -54,3 +54,19 @@ s=" eko rakhi jaat ne pyar rakhi phona cho baade ethe fiir de vepaar lage onaa c
 for i in s:
     if i not in "aeiou":
         print(i,end="")
+
+#---------------------------------------
+#sum of numbers from 1 to N:->
+N=int(input("enter a number"))
+count=1
+sum=0
+while count<=N:
+    sum=sum+count
+    count=count+1
+
+print(f"enter a number:-",(sum))    
+
+
+#range --------------------------------------
+for i in range(108):  #start- by default 0,stop-n-1, step-by default 1
+    print("Ram Ram",i+1)
