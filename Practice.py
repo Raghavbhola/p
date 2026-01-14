@@ -70,3 +70,7 @@ print(f"enter a number:-",(sum))
 #range --------------------------------------
 for i in range(108):  #start- by default 0,stop-n-1, step-by default 1
     print("Ram Ram",i+1)
+
+#------------------------
+#Write a Python program to find factorial of a number!?
+    
