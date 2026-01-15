@@ -73,4 +73,12 @@ for i in range(108):  #start- by default 0,stop-n-1, step-by default 1
 
 #------------------------
 #Write a Python program to find factorial of a number!?
+num = int(input("Enter a number:"))
+def factorial_recursive(n):
+    result = 1
+    for i in range(1,n+1):
+        result *= i
+    return result    
+
+print("factorial of", num ,"is", factorial_recursive(num))
     
