@@ -67,11 +67,11 @@ while count<=N:
 print(f"enter a number:-",(sum))    
 
 
-#range --------------------------------------
+#range -------------------------------------->
 for i in range(108):  #start- by default 0,stop-n-1, step-by default 1
     print("Ram Ram",i+1)
 
-#------------------------
+#--------------------------------------------
 #Write a Python program to find factorial of a number!?
 num = int(input("Enter a number:"))
 def factorial_recursive(n):
@@ -80,5 +80,5 @@ def factorial_recursive(n):
         result *= i
     return result    
 
-print("factorial of", num ,"is", factorial_recursive(num))
+print("factorial of", num ,"is:-", factorial_recursive(num))
     
