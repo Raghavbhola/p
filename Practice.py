@@ -82,3 +82,6 @@ def factorial_recursive(n):
 
 print("factorial of", num ,"is:-", factorial_recursive(num))
     
+#---------------
+# Write a Python program to reverse a string without using built-in functions like [::-1]?
+    
