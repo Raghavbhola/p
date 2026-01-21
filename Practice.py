@@ -84,7 +84,8 @@ print("factorial of", num ,"is:-", factorial_recursive(num))
     
 #---------------
 # Write a Python program to reverse a string without using built-in functions like? at least 4-5 character.
-
+y = "python is high level language"
+print(y[::-1])   
 
 #Without using any string methods, try to print the following: 123....n
 n = int(input())
