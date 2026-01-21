@@ -87,6 +87,9 @@ print("factorial of", num ,"is:-", factorial_recursive(num))
 y = "python is high level language"
 print(y[::-1])   
 
+x = "hello world"
+print(x[::-1])
+
 #Without using any string methods, try to print the following: 123....n
 n = int(input())
     
