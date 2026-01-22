@@ -93,6 +93,9 @@ print(x[::-1])
 z ="this is my excersice notebook"
 print(z[::-1])
 
+e = "system pe system"
+print(e[::-1])
+
 #Without using any string methods, try to print the following: 123....n
 n = int(input())
     
