@@ -87,7 +87,7 @@ print("factorial of", num ,"is:-", factorial_recursive(num))
 y = "python is high level language"
 print(y[::-1])   
 
-x = "hello world"
+x = "hello world! Python"
 print(x[::-1])
 
 z ="this is my excersice notebook"
