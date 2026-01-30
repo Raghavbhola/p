@@ -106,4 +106,16 @@ for i in range(1,n+1):
         
     print(i,end="")
 
+#Swapcase ---------------------------
+def swap_case(arg):
+    def inner_func():
+        return arg().swapcase()
+    return inner_func
+
+@swap_case
+def my_name():
+    return"hello raGHAv, how arE YOu"
+
+print(my_name())    
+
     
