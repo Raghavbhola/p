@@ -106,7 +106,7 @@ for i in range(1,n+1):
         
     print(i,end="")
 
-#Swapcase ---------------------------
+#Swapcase with using decorator----------------------------->
 def swap_case(arg):
     def inner_func():
         return arg().swapcase()
