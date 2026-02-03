@@ -116,6 +116,7 @@ def my_name():
 
 print(my_name())    
 
+#-------------------------------------------------
 #print 1 to 300 skip not divided by 3,5
 for i in range(300):
     if (i % 3) != 0 or (i % 5) !=5:
