@@ -87,13 +87,13 @@ print("factorial of", num ,"is:-", factorial_recursive(num))
 y = "python is high level language"
 print(y[::-1])   
 
-x = "hello world! Pop language"
+x = "hello world! This is python language"
 print(x[::-1])
 
 z ="this is my excersice notebook"
 print(z[::-1])
 
-e = "Karan Aujla is one of the best punjabi singers"
+e = "Karan Aujla is one of the best punjabi singer"
 print(e[::-1])
 
 f = "to store history of changes of your code"
