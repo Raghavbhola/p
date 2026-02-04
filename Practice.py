@@ -93,7 +93,7 @@ print(x[::-1])
 z ="this is my excersice notebook"
 print(z[::-1])
 
-e = "system pe system"
+e = "Karan Aujla is one of the best punjabi singers"
 print(e[::-1])
 
 f = "to store history of changes of your code"
