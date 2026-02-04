@@ -116,11 +116,21 @@ def my_name():
 
 print(my_name())    
 
-#-------------------------------------------------
+#----------------------------------------------------------
 #print 1 to 300 skip not divided by 3,5
 for i in range(300):
     if (i % 3) != 0 or (i % 5) !=5:
         #if (i % 5) != 0:
     
-            print(i)
+        print(i)
+
+#count even number
+ev = [2,3,4,6,7,8,9,12,14,16,17,18,19,20]
+count =  0
+for i in ev:
+
+    if i % 2 == 0:
+        count += 1
+print("Even number count-",count)
+
     
