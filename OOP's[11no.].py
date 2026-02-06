@@ -453,7 +453,7 @@ print(e3.name)
 print(e1.age)
 print(e2.salary)
 
-#----------------------
+#-------------------------
 class Employee:
     def __init__(self):      #default constructer
         self.name = "yamunaa"
@@ -467,3 +467,7 @@ e3 = Employee()
 print(e3.name)
 print(e1.age)
 print(e2.salary)
+
+#Inheritance:->Reusability is one of the key benefits of object oriented programming (OOPs). 
+#              Instead of writing code again and again, we can reuse existing tested classes.
+#              This saves times, effort, money, & reduces errors.
