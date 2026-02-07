@@ -472,9 +472,10 @@ print(e2.salary)
 #              Instead of writing code again and again, we can reuse existing tested classes.
 #              This saves times, effort, money, & reduces errors.
 # The existing class is called the base class (or parent class), of the new class is called Derived class(or child class).
+
 # There are 5 types of Inheritance:-
-#(1)Single inheritance
-#(2)Multilevel inheritance
-#(3)Multiple inheritance
-#(4)Hierarchinal inheritance
-#(5)hybrid inheritance
+#                  (1)Single inheritance
+#                  (2)Multilevel inheritance
+#                  (3)Multiple inheritance
+#                  (4)Hierarchinal inheritance
+#                  (5)hybrid inheritance
