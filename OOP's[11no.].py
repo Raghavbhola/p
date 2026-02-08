@@ -479,3 +479,5 @@ print(e2.salary)
 #                  (3)Multiple inheritance
 #                  (4)Hierarchinal inheritance
 #                  (5)hybrid inheritance
+
+#Single inheritance:->>
