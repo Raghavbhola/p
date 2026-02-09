@@ -497,5 +497,7 @@ class child (Parent):
 c1 = child()
 print(c1.greet_child())
 print(c1.greet()) 
+print(c1.greet1())
+print(c1.greet2())
 
 
