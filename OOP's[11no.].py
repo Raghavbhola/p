@@ -481,3 +481,21 @@ print(e2.salary)
 #                  (5)hybrid inheritance
 
 #Single inheritance:->>
+
+class Parent:
+    def greet (self):
+        return "Hello from parent"
+    def greet1 (self):
+        return "Good morning from parent"
+    def greet2 (self):
+        return "Good night from parent"
+    
+class child (Parent):
+    def greet_child(self):
+        return "hello from child"
+
+c1 = child()
+print(c1.greet_child())
+print(c1.greet()) 
+
+
