@@ -501,3 +501,20 @@ print(c1.greet1())
 print(c1.greet2())
 
 
+
+class vehicle:
+    def name (self):
+        return"This is my Porsche"
+    def name1 (self):
+        return"This is my BMW"
+    
+class car(vehicle):
+    def name_car (self):
+        return"hello"
+
+c1 = car()
+print(c1.name_car())
+print(c1.name())        
+print(c1.name1())
+
+
