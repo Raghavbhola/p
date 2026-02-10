@@ -518,3 +518,19 @@ print(c1.name())
 print(c1.name1())
 
 
+class parent:
+    def parent_mothod(Yashika, name ="Akash",age = 40):
+        Yashika = name
+        Yashika = age
+        return "This is method in the Parent class.Name: {}, Age:{}".format(name,age)
+    
+class child (parent):
+    def child_method(yashika, name = "Akash", age = 30):
+        yashika.name = name
+        yashika.age = age
+        return "This is a method in the child.Name: {}, Age:{}".format(name,age)
+
+c1 = child()
+p1 = parent()
+print(c1.parent_mothod())
+print(c1.child_method())        
