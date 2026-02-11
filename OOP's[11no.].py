@@ -533,3 +533,30 @@ c1 = child()
 p1 = parent()
 print(c1.parent_mothod())
 print(c1.child_method())        
+
+
+#Multiple inheritance:-
+class Parent1:
+    def method1(self):
+        return"This is method 1 from Parent1"
+    
+class Parent2:
+    def method2(self):
+        return "This is method 2 from Parent2"
+
+class parent3:
+    def method1(self):
+        return "This is method 3 from Parent3"    
+
+class child(Parent2,parent3):
+    def child_method(self):
+        return"This is a method"
+           
+
+c1 = child()
+print(c1.method1())
+print(c1.method2())
+print(c1.method1())
+print(c1.child_method())
+
+#NOTE:- MRO(Method Resolution Order):- The order in which python looks for a method in a hierarchy of classes.
