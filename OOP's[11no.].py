@@ -500,8 +500,7 @@ print(c1.greet())
 print(c1.greet1())
 print(c1.greet2())
 
-
-
+#--------------------------------------
 class vehicle:
     def name (self):
         return"This is my Porsche"
@@ -517,7 +516,7 @@ print(c1.name_car())
 print(c1.name())        
 print(c1.name1())
 
-
+#-------------------------------------------
 class parent:
     def parent_mothod(Yashika, name ="Akash",age = 40):
         Yashika = name
