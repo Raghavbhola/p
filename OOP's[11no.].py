@@ -535,7 +535,7 @@ print(c1.parent_mothod())
 print(c1.child_method())        
 
 
-#Multiple inheritance:-
+#Multiple inheritance:---
 class Parent1:
     def method1(self):
         return"This is method 1 from Parent1"
@@ -595,6 +595,46 @@ class calculator(Division, Modulos):
 
 a = 16
 b = 78
+c1 = calculator(a,b)
+print("Division and Modulos:",c1.calculator_method())
+print("Division:",c1.divide())
+print("Modulos:",c1.modulos())                     
+
+#----------------
+class Division:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+
+    def divide(self):
+        if self.b != 0:
+            return self.a/self.b
+        else:
+            return"Cannot divide by zero"
+
+class Modulos:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+
+    def modulos(self):
+        if self.b != 0:
+            return self.a % self.b
+        else:
+            return"cannot modulos by zero"    
+
+class calculator(Division, Modulos):
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def calculator_method(self):
+        divval = Division.divide(self)  
+        modval = Modulos.modulos(self)
+        return"Division: {}, Modulos: {}".format(divval,modval)
+
+a = int(input("enter the number"))
+b = int(input("enter the number"))
 c1 = calculator(a,b)
 print("Division and Modulos:",c1.calculator_method())
 print("Division:",c1.divide())
