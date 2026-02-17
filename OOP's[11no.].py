@@ -439,6 +439,7 @@ print(f"karan show money:-",Karan.showmoney())    #karan show money:- 1000000000
 #  There are two types of constructors:->(1)Default constructor
 #                                        (2)Parameterized constructor
 
+#-------------------------------
 class Employee:
     def __init__(self):      #default constructer
         self.name = "Bhawana"
@@ -536,7 +537,7 @@ print(c1.child_method())
 
 
 #Multiple inheritance:--------------------------------
-#(1)----------------
+#(1)-----------------------------
 class Parent1:
     def method1(self):
         return"This is method 1 from Parent1"
