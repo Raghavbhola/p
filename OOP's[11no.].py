@@ -474,14 +474,14 @@ print(e2.salary)
 # The existing class is called the base class (or parent class), of the new class is called Derived class(or child class).
 
 # There are 5 types of Inheritance:-
-#                  (1)Single inheritance
-#                  (2)Multilevel inheritance
-#                  (3)Multiple inheritance
-#                  (4)Hierarchinal inheritance
-#                  (5)hybrid inheritance
+#                    (1)Single inheritance
+#                    (2)Multilevel inheritance
+#                    (3)Multiple inheritance
+#                    (4)Hierarchinal inheritance
+#                    (5)hybrid inheritance
 
 #Single inheritance:->>
-
+#(1)---------------
 class Parent:
     def greet (self):
         return "Hello from parent"
@@ -500,7 +500,7 @@ print(c1.greet())
 print(c1.greet1())
 print(c1.greet2())
 
-#--------------------------------------
+#(2)-----------------------------------------------------
 class vehicle:
     def name (self):
         return"This is my Porsche"
@@ -516,7 +516,7 @@ print(c1.name_car())
 print(c1.name())        
 print(c1.name1())
 
-#-------------------------------------------
+#(3)--------------------------------------------------------
 class parent:
     def parent_mothod(Yashika, name ="Akash",age = 40):
         Yashika = name
@@ -535,7 +535,8 @@ print(c1.parent_mothod())
 print(c1.child_method())        
 
 
-#Multiple inheritance:---
+#Multiple inheritance:--------------------------------
+#(1)----------------
 class Parent1:
     def method1(self):
         return"This is method 1 from Parent1"
@@ -561,6 +562,7 @@ print(c1.child_method())
 
 #NOTE:- MRO(Method Resolution Order):- The order in which python looks for a method in a hierarchy of classes.
 
+#(1)-----------------------------------------------------
 class Division:
     def __init__(self,a,b):
         self.a = a
@@ -600,7 +602,7 @@ print("Division and Modulos:",c1.calculator_method())
 print("Division:",c1.divide())
 print("Modulos:",c1.modulos())                     
 
-#----------------
+#(2)---------------------------------------------------
 class Division:
     def __init__(self,a,b):
         self.a = a
