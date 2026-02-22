@@ -641,4 +641,28 @@ b = int(input("enter the number"))
 c1 = calculator(a,b)
 print("Division and Modulos:",c1.calculator_method())
 print("Division:",c1.divide())
-print("Modulos:",c1.modulos())                     
+print("Modulos:",c1.modulos())             
+
+#Multilevel Inheritance:->
+
+class Grandparent:
+    def grandparent_method(Self):
+        return"This is a method in the Grandparent class"
+
+class Parent(Grandparent):
+    def parent_method(self):
+        return"This is a method in the parent class"
+
+class child(Parent):
+    def child_method(self):
+        return"This is a method in the child class"
+
+class Futurechild(child):
+    def future_child_method(self):
+        return"This is a method in the future child class"
+    
+c1 = Futurechild()
+print(c1.future_child_method())
+print(c1.child_method())
+print(c1.parent_method())
+print(c1.grandparent_method())            
