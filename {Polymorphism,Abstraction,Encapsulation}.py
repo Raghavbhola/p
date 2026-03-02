@@ -74,3 +74,14 @@ print(c1.add(10,10,4)) #This will work because the second add method is defined 
 
 #This will give an error because the second add method will override the first add method. To achieve function overloading, we can use default parameters or variable length arguments.
     
+class Calculator:
+    def add(self,a,b,c=0,d=0):
+        return a+b+c+d
+
+c2 = Calculator()
+print(c2.add(1,5))
+print(c2.add(2,3,4))
+print(c2.add(100000,30,4987,89874))
+print(c2.add(2,3,4,5,6)) #This will give an error because the add method is defined with four parameters only. To achieve function overloading, we can use variable length arguments.
+
+#2nd way to achieve the function overloading.
