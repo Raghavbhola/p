@@ -9,6 +9,7 @@
 #4. Duck typing - When the type of an object is determined by its behavior rather than its class. It is based on the principle of "If it looks like a duck and quacks like a duck, then it is a duck". It allows us to use objects of different classes in the same way if they have the same behavior.
 
 #(1)Duck Typing:->
+(1)
 class duck:
     def quack(self):
         return"Quack Quack"
@@ -29,7 +30,7 @@ bird1 = AnotherBird()
 AnotherBird.makeSound(bird1)
 AnotherBird.makeSound(duck1)
 
-
+(2)
 class Dog:
     def sound(self):
         return "Bark"
@@ -59,3 +60,17 @@ h1 = Human()
 Human.Human_method(d1)
 Human.Human_method(c1)
 Human.Human_method(h1)
+
+#Function/ Method Overloading:->In this class can have multiple methods with the same name but different parameters.Python doesnot support function overloading, but we can achieve it by default parameters or variable length arguments.
+
+class Calculator:
+    def add(self,a,b):
+        return a+b
+    def add(self,a,b,c):
+        return a+b+c
+c1 = Calculator()
+#print(c1.add(2,3)) #This will give an error because the second add method will override the first add method.
+print(c1.add(10,10,4)) #This will work because the second add method is defined with three parameters.
+
+#This will give an error because the second add method will override the first add method. To achieve function overloading, we can use default parameters or variable length arguments.
+    
