@@ -85,3 +85,9 @@ print(c2.add(100000,30,4987,89874))
 print(c2.add(2,3,4,5,6)) #This will give an error because the add method is defined with four parameters only. To achieve function overloading, we can use variable length arguments.
 
 #2nd way to achieve the function overloading.
+#-Need to install the package- pip install multiple dispatch
+#from multiple dispatch import dispatch
+
+
+#3. Operator Overloading - When a operator is used with different types of objects, it behaves differently based on the type of object. We can achieve operator overloading by defining special methods in the class. These special methods are called magic methods or dunder methods (double underscore methods). 
+#                          For example, the __add__ method is used to overload the + operator, the __sub__ method is used to overload the - operator, the __mul__ method is used to overload the * operator, and so on.
