@@ -91,3 +91,19 @@ print(c2.add(2,3,4,5,6)) #This will give an error because the add method is defi
 
 #3. Operator Overloading - When a operator is used with different types of objects, it behaves differently based on the type of object. We can achieve operator overloading by defining special methods in the class. These special methods are called magic methods or dunder methods (double underscore methods). 
 #                          For example, the __add__ method is used to overload the + operator, the __sub__ method is used to overload the - operator, the __mul__ method is used to overload the * operator, and so on.
+
+class point:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    def __add__(self, other):
+        return point(self.x + other.x , self.y + other.y)
+    def __str__(self):
+        return"({},{})".format(self.x, self.y)
+
+p1 = point(2,3) 
+p2 = point(4,5)
+print(p1)       #This will call the _str_ method to print thr point in the format(x,y).
+print(p2)       #This will call the _str_ method to print thr point in the format(x,y).
+p3 = p1 + p2
+print(p3)       #This will call the _str_ method to print thr point in the format(x,y).  
