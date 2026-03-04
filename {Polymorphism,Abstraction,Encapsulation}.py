@@ -109,3 +109,51 @@ p3 = p1 + p2
 print(p3)       #This will call the _str_ method to print thr point in the format(x,y).  
 
 #4. Method Overriding - When a method in a child class has the same name as a method in the parent class, the method in the child class overrides the method in the parent class. We can achieve method overriding by defining a method with the same name in the child class.
+#(1)------------------->
+class Parent:
+    def greet(self):
+        return"Hello From Parent"
+    def greet1(self):
+        return"Good Morning from Parent"
+    def greet2(self):
+        return"Good night from parent"
+
+class child(Parent):
+    def greet(self):
+        return"Hello from child"
+    def greet1(self):
+        return"Good morning from child"
+    def greet2(self):
+        return"Good night child"
+
+c1 = child()
+c2 = Parent()
+print(c1.greet())
+print(c1.greet1())
+print(c1.greet2())
+print(c2.greet())     
+print(c2.greet1())
+print(c2.greet2())      
+
+#(2)------------------>
+class Employee:
+    def __init__(self,name, age):
+        self.name = name
+        self.age = age
+    def employee_info(self):
+        return"Name:{}, age:{}".format(self.name,self.age)
+    def employee_salary(self,salary):
+        return"salary:{}".format(salary)
+
+class Manager(Employee):
+    def manager_info(self):
+        return"Manager Name:{}, Manager Age:{}".format(self.name, self.age)
+    def manager_salary(self, salary):
+        return"Manager Salary:{}".format(salary)
+
+e1 = Employee("Akash", 25)
+m1 = Manager("Yashika", 30)
+print(e1.employee_info())
+print(e1.employee_salary(50000))
+print(m1.manager_info())
+print(m1.manager_salary(100000))
