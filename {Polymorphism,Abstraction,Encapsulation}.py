@@ -107,3 +107,5 @@ print(p1)       #This will call the _str_ method to print thr point in the forma
 print(p2)       #This will call the _str_ method to print thr point in the format(x,y).
 p3 = p1 + p2
 print(p3)       #This will call the _str_ method to print thr point in the format(x,y).  
+
+#4. Method Overriding - When a method in a child class has the same name as a method in the parent class, the method in the child class overrides the method in the parent class. We can achieve method overriding by defining a method with the same name in the child class.
