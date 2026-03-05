@@ -157,3 +157,28 @@ print(e1.employee_info())
 print(e1.employee_salary(50000))
 print(m1.manager_info())
 print(m1.manager_salary(100000))
+
+#(3)---------------->
+class Employee:
+    def __init__(self,name, age):
+        self.name = name
+        self.age = age
+    def getname(self):
+        return self.name
+    def getage(self):
+        return self.age
+
+class Manager(Employee):
+    def __init__(self, name, age, department):
+        super().__init__(name, age)
+        self.department = department
+    def getdepartment(self):
+        return self.department
+
+e1 = Employee("Akash", 25)
+m1 = Manager("Yashika", 30, "HR")
+print(e1.getname())
+print(e1.getage())
+print(m1.getname())
+print(m1.getage())
+print(m1.getdepartment())
