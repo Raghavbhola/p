@@ -182,3 +182,12 @@ print(e1.getage())
 print(m1.getname())
 print(m1.getage())
 print(m1.getdepartment())
+
+# Dynamic binding=> The method to be called is determined at runtime based on the object type. It is the process of linking a procedure call to the code to be executed in response to the call. 
+#                   It is also known as late binding or runtime binding. It allows us to achieve polymorphism in Python because we can use the same method name for different types of objects and it will work based on the type of object. 
+#                   It is used to achieve polymorphism in Python because we can use the same method name for different types of objects and it will work based on the type of object.
+
+# Dynamic typing => The type of an object is determined at runtime based on the value assigned to it.
+
+# Dynamic vs static typing ==> Dynamic typing allows us to change the type of an object at runtime, while static typing does not allow us to change the type of an object at runtime. Python is a dynamically typed language, which means that we can change the type of an object at runtime.
+
