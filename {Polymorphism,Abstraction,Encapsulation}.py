@@ -183,6 +183,32 @@ print(m1.getname())
 print(m1.getage())
 print(m1.getdepartment())
 
+#(4)---------------
+class Employee:
+    def __init__(self,name, age):
+        self.name = name
+        self.age = age
+    def getname(self):
+        return self.name
+    def getage(self):
+        return self.age
+
+class Manager(Employee):
+    def __init__(self, name, age, department):
+        super().__init__(name, age)
+        self.department = department
+    def getdepartment(self):
+        return self.department
+
+e1 = Employee("Akash", 25)
+m1 = Manager("Yashika", 30, "HR")
+t2 = Manager("Shubham", 45, "Ericsson")
+print(e1.getname())
+print(e1.getage())
+print(t2.getname())
+print(t2.getage())
+print(t2.getdepartment())
+
 # Dynamic binding=> The method to be called is determined at runtime based on the object type. It is the process of linking a procedure call to the code to be executed in response to the call. 
 #                   It is also known as late binding or runtime binding. It allows us to achieve polymorphism in Python because we can use the same method name for different types of objects and it will work based on the type of object. 
 #                   It is used to achieve polymorphism in Python because we can use the same method name for different types of objects and it will work based on the type of object.
@@ -191,3 +217,34 @@ print(m1.getdepartment())
 
 # Dynamic vs static typing ==> Dynamic typing allows us to change the type of an object at runtime, while static typing does not allow us to change the type of an object at runtime. Python is a dynamically typed language, which means that we can change the type of an object at runtime.
 
+class shape:
+    def draw(self):
+        print("Drawing a shape")
+class circle(shape):
+    def draw(self):
+        print("Drawing a circle")
+        return
+
+class square(shape):
+    def draw(self):
+        print("drawing a square")
+        return 
+
+class triangle:
+    def draw(self):
+        print("Drawing a triangle")
+        return
+shapes = [circle(), square(), triangle(), shape()]
+for s in shapes:
+    s.draw()          
+
+
+#Abstraction - Hiding the internal details and showing only the functionality to the user. It helps in reducing complexity and allows the user to interact with the system without needing to understand the underlying implementation.
+#This helps in reducing complexity and allows the user to interact with the system without needing to understand the underlying implementation. It also helps in improving security by hiding sensitive information from the user.
+
+#2 types of abstraction:
+#1. Data Abstraction: It focuses on hiding the internal details of data and only exposing the necessary information to the user. This is achieved through the use of classes and objects in object-oriented programming. For example, a class can have private attributes that are not accessible to the user, and
+#2. Procedural/process Abstraction: It focuses on hiding the internal details of a process or a function and only exposing the necessary information to the user. This is achieved through the use of functions and methods in programming. For example, a function can have a complex implementation, but the user only needs to know how to call the function and what parameters it takes.
+#A class is said to be abstract class its can not be instantiated and it can have abstract methods which are methods that are declared but not implemented in the abstract class. The implementation of the abstract methods is done in the derived classes that inherit from the abstract class. This allows for a common interface to be defined in the abstract class, while allowing for different implementations in the derived classes.
+
+#we have to import ABC and abstractmethod from the abc module to create an abstract class in Python. The ABC class is used as a base class for defining abstract classes, and the abstractmethod decorator is used to declare methods as abstract methods that must be implemented in the derived classes.
