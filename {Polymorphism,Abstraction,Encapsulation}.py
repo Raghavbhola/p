@@ -248,3 +248,11 @@ for s in shapes:
 #A class is said to be abstract class its can not be instantiated and it can have abstract methods which are methods that are declared but not implemented in the abstract class. The implementation of the abstract methods is done in the derived classes that inherit from the abstract class. This allows for a common interface to be defined in the abstract class, while allowing for different implementations in the derived classes.
 
 #we have to import ABC and abstractmethod from the abc module to create an abstract class in Python. The ABC class is used as a base class for defining abstract classes, and the abstractmethod decorator is used to declare methods as abstract methods that must be implemented in the derived classes.
+
+
+
+
+#Encapsulation - It is the process of wrapping data and methods into a single unit called a class. It helps in hiding the internal details of the class and only exposing the necessary information to the user. 
+#                This is achieved through the use of access modifiers such as private, protected, and public in object-oriented programming. 
+#                Encapsulation helps in improving security by preventing unauthorized access to the data and methods of a class. 
+#                It also helps in improving code maintainability by allowing the internal implementation of a class to be changed without affecting the external code that uses the class.
