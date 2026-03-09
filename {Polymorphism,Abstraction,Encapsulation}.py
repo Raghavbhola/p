@@ -256,3 +256,17 @@ for s in shapes:
 #                This is achieved through the use of access modifiers such as private, protected, and public in object-oriented programming. 
 #                Encapsulation helps in improving security by preventing unauthorized access to the data and methods of a class. 
 #                It also helps in improving code maintainability by allowing the internal implementation of a class to be changed without affecting the external code that uses the class.
+
+class PersonalInfo:
+    def __init__(self,name,age):
+        self.name = name     #public variable
+        self.age = age       #public variable
+    def get_name(self):
+        return "My name is " + str(self.name)
+    
+    def get_age(self):
+        return "My age is " + str(self.age)
+
+person = PersonalInfo("Alice", 30)
+print(person.get_name())
+print(person.get_age())    
