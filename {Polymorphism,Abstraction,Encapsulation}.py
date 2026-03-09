@@ -249,7 +249,24 @@ for s in shapes:
 
 #we have to import ABC and abstractmethod from the abc module to create an abstract class in Python. The ABC class is used as a base class for defining abstract classes, and the abstractmethod decorator is used to declare methods as abstract methods that must be implemented in the derived classes.
 
+from abc import ABC, abstractmethod
+class Demo(ABC):
+    @abstractmethod
+    def display(self):
+        print("This is an abstruct method")
 
+    def method1(self):
+        print("This is a concreate method")
+
+class Derived(Demo):
+    def display(self):
+        super().display() #This will call the display method of the abstruct class
+        return
+    
+obj = Derived()
+obj.display()   #This will call the display method of the derived class which will call the display method of the abstruct class.
+
+obj.method1()   #This will call the concrete method of the abstruct class.
 
 
 #Encapsulation - It is the process of wrapping data and methods into a single unit called a class. It helps in hiding the internal details of the class and only exposing the necessary information to the user. 
