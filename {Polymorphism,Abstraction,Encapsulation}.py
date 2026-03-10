@@ -86,7 +86,22 @@ print(c2.add(2,3,4,5,6)) #This will give an error because the add method is defi
 
 #2nd way to achieve the function overloading.
 #-Need to install the package- pip install multiple dispatch
-#from multiple dispatch import dispatch
+from multipledispatch import dispatch
+class Calculator: 
+    @dispatch(float, float) 
+    def add(self, a, b): 
+        return a * b 
+    @dispatch(float, float, float) 
+    def add(self, a, b, c): 
+        return a * b * c 
+    @dispatch(float, float, float, float) 
+    def add(self, a, b, c, d): 
+        return a * b * c * d
+    
+c1 = Calculator()
+print(c1.add(1.0, 5.0))
+print(c1.add(2.0, 3.0, 4.0))
+print(c1.add(2.0, 3.0, 4.0, 5.0))    
 
 
 #3. Operator Overloading - When a operator is used with different types of objects, it behaves differently based on the type of object. We can achieve operator overloading by defining special methods in the class. These special methods are called magic methods or dunder methods (double underscore methods). 
