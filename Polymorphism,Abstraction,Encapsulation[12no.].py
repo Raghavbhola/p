@@ -253,14 +253,16 @@ shapes = [circle(), square(), triangle(), shape()]
 for s in shapes:
     s.draw()          
 
-
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Abstraction - Hiding the internal details and showing only the functionality to the user. It helps in reducing complexity and allows the user to interact with the system without needing to understand the underlying implementation.
 #This helps in reducing complexity and allows the user to interact with the system without needing to understand the underlying implementation. It also helps in improving security by hiding sensitive information from the user.
 
 #2 types of abstraction:
 #1. Data Abstraction: It focuses on hiding the internal details of data and only exposing the necessary information to the user. This is achieved through the use of classes and objects in object-oriented programming. For example, a class can have private attributes that are not accessible to the user, and
-#2. Procedural/process Abstraction: It focuses on hiding the internal details of a process or a function and only exposing the necessary information to the user. This is achieved through the use of functions and methods in programming. For example, a function can have a complex implementation, but the user only needs to know how to call the function and what parameters it takes.
-#A class is said to be abstract class its can not be instantiated and it can have abstract methods which are methods that are declared but not implemented in the abstract class. The implementation of the abstract methods is done in the derived classes that inherit from the abstract class. This allows for a common interface to be defined in the abstract class, while allowing for different implementations in the derived classes.
+#2. Procedural/process Abstraction: It focuses on hiding the internal details of a process or a function and only exposing the necessary information to the user. This is achieved through the use of functions and methods in programming. 
+#                                 For example, a function can have a complex implementation, but the user only needs to know how to call the function and what parameters it takes.
+#                                 A class is said to be abstract class its can not be instantiated and it can have abstract methods which are methods that are declared but not implemented in the abstract class. The implementation of the abstract methods is done in the derived classes that inherit from the abstract class.
+#                                 This allows for a common interface to be defined in the abstract class, while allowing for different implementations in the derived classes.
 
 #we have to import ABC and abstractmethod from the abc module to create an abstract class in Python. The ABC class is used as a base class for defining abstract classes, and the abstractmethod decorator is used to declare methods as abstract methods that must be implemented in the derived classes.
 
@@ -283,7 +285,7 @@ obj.display()   #This will call the display method of the derived class which wi
 
 obj.method1()   #This will call the concrete method of the abstruct class.
 
-
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Encapsulation - It is the process of wrapping data and methods into a single unit called a class. It helps in hiding the internal details of the class and only exposing the necessary information to the user. 
 #                This is achieved through the use of access modifiers such as private, protected, and public in object-oriented programming. 
 #                Encapsulation helps in improving security by preventing unauthorized access to the data and methods of a class. 
