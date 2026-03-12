@@ -31,8 +31,12 @@ class kunalClass(Interface1,Interface2):
         print("Implementation of method1")
     def method2(self):
         print("Implementation of method2")
+    def method3(self):
+        print("Implementation of method3")    
 
 obj = kunalClass()
 #obj1 = Interface1()  #This will give an error becoz we cannot instantiate an abstruct class
 obj.method1()
-obj.method2()             
+obj.method2()   
+obj.method3()          
+       
