@@ -10,7 +10,7 @@
 # 2. Informal Interface - An informal interface is a convention that specifies the methods that a class should implement. 
 #                         It is not enforced by the language, and there is no way to check if a class implements an informal interface. For example, we can define an informal interface for a class that represents a shape:
 
-#formal Interface:-->
+#formal Interface:-->(1)-----
 from abc import ABC , abstractmethod #abstruct base class
 import abc
 class Interface1(ABC):
@@ -40,3 +40,33 @@ obj.method1()
 obj.method2()   
 obj.method3()          
        
+#(2)----------------------->
+from abc import ABC , abstractmethod #abstruct base class
+import abc
+class Interface1(ABC):
+    @abstractmethod
+    def method1 (self):
+        pass
+    @abstractmethod
+    def method2 (self):
+        pass
+class Interface2(ABC):
+    @abstractmethod
+    def method2 (self):
+        pass
+
+class kunalClass(Interface1,Interface2):
+    def method1(self):
+        #pass
+        print("This is our system")
+    def method2(self):
+        print("BROH international ")
+    def method3(self):
+        print("It is Nature series")    
+
+obj = kunalClass()
+#obj1 = Interface1()  #This will give an error becoz we cannot instantiate an abstruct class
+obj.method1()
+obj.method2()   
+obj.method3()          
+
