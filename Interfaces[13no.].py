@@ -70,3 +70,18 @@ obj.method1()
 obj.method2()   
 obj.method3()          
 
+#(3)------------------->
+class kunalClassInterface1:
+    def method1(self):
+        print("Kunal implementation of method1")
+
+    def method3(self):
+        print("Kunal implementstion of method3")
+
+    def shubham(self):
+        print("shubham implementation of method2")
+
+obj2 = kunalClassInterface1()
+obj2.method1()
+obj2.method3()
+obj2.shubham()
