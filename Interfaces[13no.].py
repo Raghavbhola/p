@@ -85,3 +85,20 @@ obj2 = kunalClassInterface1()
 obj2.method1()
 obj2.method3()
 obj2.shubham()
+
+#Informal Interface
+class demoInformalInterface:
+    def method1(self):
+        pass
+
+    def method2(self):
+        pass
+
+class KunalClass(demoInformalInterface):
+    def method1(self):
+        print("Implementation of method1")
+    def method2(self):
+        print("Implementation of method2")
+obj = KunalClass()
+obj.method1()       #This will work because method1 is implemented
+obj.method2()       #This will work because method2 is implemented
