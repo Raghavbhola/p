@@ -8,9 +8,11 @@
 # 1. Formal Interface - A formal interface is defined using the abc module, and it is enforced by the language. 
 #                       A class that implements a formal interface must implement all the methods defined in the interface. For example, we can define a formal interface for a class that represents a shape:
 # 2. Informal Interface - An informal interface is a convention that specifies the methods that a class should implement. 
-#                         It is not enforced by the language, and there is no way to check if a class implements an informal interface. For example, we can define an informal interface for a class that represents a shape:
+#                         It is not enforced by the language, and there is no way to check if a class implements an informal interface. 
+#                         For example, we can define an informal interface for a class that represents a shape:
 
-#formal Interface:-->(1)-----
+#formal Interface:
+#(1)------------->
 from abc import ABC , abstractmethod #abstruct base class
 import abc
 class Interface1(ABC):
@@ -40,7 +42,7 @@ obj.method1()
 obj.method2()   
 obj.method3()          
        
-#(2)----------------------->
+#(2)--------------------------->
 from abc import ABC , abstractmethod #abstruct base class
 import abc
 class Interface1(ABC):
@@ -70,7 +72,7 @@ obj.method1()
 obj.method2()   
 obj.method3()          
 
-#(3)------------------->
+#(3)------------------------>
 class kunalClassInterface1:
     def method1(self):
         print("Kunal implementation of method1")
@@ -86,7 +88,7 @@ obj2.method1()
 obj2.method3()
 obj2.shubham()
 
-#Informal Interface
+#Informal Interface -----------------
 class demoInformalInterface:
     def method1(self):
         pass
